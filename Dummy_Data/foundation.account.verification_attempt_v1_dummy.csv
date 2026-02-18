@@ -1,0 +1,11 @@
+attempt_id,user_id,verification_type,attempt_date,result
+VA001,U100,Email,1/1/2024,Success
+VA002,U101,ID,1/2/2024,Success
+VA003,U102,Email,1/3/2024,Failed
+VA004,U103,ID,1/4/2024,Success
+VA005,U104,Email,1/5/2024,Pending
+VA006,U105,ID,1/6/2024,Success
+VA007,U106,Email,1/7/2024,Failed
+VA008,U107,ID,1/8/2024,Success
+VA009,U108,Email,1/9/2024,Success
+VA010,U109,ID,1/10/2024,Success

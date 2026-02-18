@@ -1,0 +1,11 @@
+withdrawal_id,user_id,amount,status,transaction_id
+W001,U100,50,Completed,TXN901
+W002,U101,75,Completed,TXN903
+W003,U102,30,Failed,TXN905
+W004,U103,100,Completed,TXN907
+W005,U104,25,Pending,TXN909
+W006,U100,60,Completed,TXN902
+W007,U101,40,Completed,TXN904
+W008,U102,90,Completed,TXN906
+W009,U103,20,Pending,TXN908
+W010,U104,110,Completed,TXN900

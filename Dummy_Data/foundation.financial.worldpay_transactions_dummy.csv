@@ -1,0 +1,11 @@
+transaction_id,user_id,amount,transaction_type,status
+TXN900,U100,200,Deposit,Settled
+TXN901,U100,50,Withdrawal,Settled
+TXN902,U101,500,Deposit,Settled
+TXN903,U101,75,Withdrawal,Settled
+TXN904,U102,150,Deposit,Pending
+TXN905,U102,30,Withdrawal,Failed
+TXN906,U103,300,Deposit,Settled
+TXN907,U103,100,Withdrawal,Settled
+TXN908,U104,100,Deposit,Failed
+TXN909,U104,25,Withdrawal,Pending

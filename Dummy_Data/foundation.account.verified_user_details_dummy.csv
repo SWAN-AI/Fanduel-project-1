@@ -1,0 +1,11 @@
+user_id,verification_level,verified_date,country,active
+U100,Full,1/1/2024,US,TRUE
+U101,Full,1/2/2024,US,TRUE
+U102,Partial,1/3/2024,CA,FALSE
+U103,Full,1/4/2024,US,TRUE
+U104,Partial,1/5/2024,UK,FALSE
+U105,Full,1/6/2024,US,TRUE
+U106,None,null,US,FALSE
+U107,Full,1/8/2024,CA,TRUE
+U108,Full,1/9/2024,US,TRUE
+U109,Full,1/10/2024,UK,TRUE
