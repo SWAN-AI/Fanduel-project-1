@@ -1,0 +1,9 @@
+table,decision,coverage,schema_column_count,doc_row_count,missing_definition_count,weak_definition_count,weak_definition_ratio,issue_count,thresholds
+foundation_account_authgateway_session_created_events,PASS,1.0,5,5,0,0,0.0,0,"{'min_doc_coverage': 0.95, 'max_weak_definition_ratio': 0.2, 'fail_on_duplicate_class_localname': True}"
+foundation_account_verification_attempt,PASS,1.0,5,5,0,0,0.0,0,"{'min_doc_coverage': 0.95, 'max_weak_definition_ratio': 0.2, 'fail_on_duplicate_class_localname': True}"
+foundation_account_verified_user_details,PASS,1.0,5,5,0,0,0.0,0,"{'min_doc_coverage': 0.95, 'max_weak_definition_ratio': 0.2, 'fail_on_duplicate_class_localname': True}"
+foundation_financial_deposits,PASS,1.0,7,10,0,0,0.0,0,"{'min_doc_coverage': 0.95, 'max_weak_definition_ratio': 0.2, 'fail_on_duplicate_class_localname': True}"
+foundation_financial_ledger_account_balances,PASS,1.0,5,5,0,0,0.0,0,"{'min_doc_coverage': 0.95, 'max_weak_definition_ratio': 0.2, 'fail_on_duplicate_class_localname': True}"
+foundation_financial_ledger_lines,PASS,1.0,5,5,0,0,0.0,0,"{'min_doc_coverage': 0.95, 'max_weak_definition_ratio': 0.2, 'fail_on_duplicate_class_localname': True}"
+foundation_financial_withdrawals,PASS,1.0,7,10,0,0,0.0,0,"{'min_doc_coverage': 0.95, 'max_weak_definition_ratio': 0.2, 'fail_on_duplicate_class_localname': True}"
+foundation_financial_worldpay_transactions,PASS,1.0,5,5,0,0,0.0,0,"{'min_doc_coverage': 0.95, 'max_weak_definition_ratio': 0.2, 'fail_on_duplicate_class_localname': True}"
