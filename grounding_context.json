@@ -1,0 +1,1730 @@
+[
+    {
+        "tech_table": "foundation.financial.ledger_lines_enriched_v1",
+        "class_candidates": [
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#LedgerLine",
+                "name": "LedgerLine",
+                "label": "Ledger line",
+                "comment": "None",
+                "tokens": "ledgerline",
+                "score": 0.59
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#LedgerEntity",
+                "name": "LedgerEntity",
+                "label": "Ledger concept",
+                "comment": "None",
+                "tokens": "ledgerentity",
+                "score": 0.5
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#EnrichedTable",
+                "name": "EnrichedTable",
+                "label": "Enriched table",
+                "comment": "A table produced by enrichment or denormalization (e.g., deposits_enriched_v1).",
+                "tokens": "enrichedtable",
+                "score": 0.43
+            }
+        ],
+        "columns": [
+            {
+                "tech_column": "ledger_line_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#postedAsLedgerLine",
+                        "name": "postedAsLedgerLine",
+                        "label": "posted as ledger line",
+                        "comment": "None",
+                        "tokens": "postedasledgerline",
+                        "score": 0.62
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount",
+                        "name": "affectsLedgerAccount",
+                        "label": "affects ledger account",
+                        "comment": "None",
+                        "tokens": "affectsledgeraccount",
+                        "score": 0.41
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#governanceScore",
+                        "name": "governanceScore",
+                        "label": "governance score (0-100)",
+                        "comment": "None",
+                        "tokens": "governancescore",
+                        "score": 0.34
+                    }
+                ]
+            },
+            {
+                "tech_column": "account_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasColumn",
+                        "name": "hasColumn",
+                        "label": "has column",
+                        "comment": "None",
+                        "tokens": "hascolumn",
+                        "score": 0.53
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount",
+                        "name": "affectsLedgerAccount",
+                        "label": "affects ledger account",
+                        "comment": "None",
+                        "tokens": "affectsledgeraccount",
+                        "score": 0.47
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.42
+                    }
+                ]
+            },
+            {
+                "tech_column": "transaction_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasProviderTransaction",
+                        "name": "hasProviderTransaction",
+                        "label": "has provider transaction",
+                        "comment": "None",
+                        "tokens": "hasprovidertransaction",
+                        "score": 0.61
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.5
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#usageRecommendation",
+                        "name": "usageRecommendation",
+                        "label": "usage recommendation",
+                        "comment": "None",
+                        "tokens": "usagerecommendation",
+                        "score": 0.42
+                    }
+                ]
+            },
+            {
+                "tech_column": "entry_date",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#inferredDatatype",
+                        "name": "inferredDatatype",
+                        "label": "inferred datatype",
+                        "comment": "None",
+                        "tokens": "inferreddatatype",
+                        "score": 0.46
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#enriches",
+                        "name": "enriches",
+                        "label": "enriches",
+                        "comment": "Enriched table adds context/features to the base table.",
+                        "tokens": "enriches",
+                        "score": 0.44
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#belongsToTable",
+                        "name": "belongsToTable",
+                        "label": "belongs to table",
+                        "comment": "None",
+                        "tokens": "belongstotable",
+                        "score": 0.42
+                    }
+                ]
+            },
+            {
+                "tech_column": "amount",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasColumn",
+                        "name": "hasColumn",
+                        "label": "has column",
+                        "comment": "None",
+                        "tokens": "hascolumn",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount",
+                        "name": "affectsLedgerAccount",
+                        "label": "affects ledger account",
+                        "comment": "None",
+                        "tokens": "affectsledgeraccount",
+                        "score": 0.38
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tech_table": "foundation.financial.deposits_v4",
+        "class_candidates": [
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#Deposit",
+                "name": "Deposit",
+                "label": "Deposit",
+                "comment": "None",
+                "tokens": "deposit",
+                "score": 0.78
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#Dimension",
+                "name": "Dimension",
+                "label": "Dimension",
+                "comment": "None",
+                "tokens": "dimension",
+                "score": 0.4
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#LedgerEntity",
+                "name": "LedgerEntity",
+                "label": "Ledger concept",
+                "comment": "None",
+                "tokens": "ledgerentity",
+                "score": 0.35
+            }
+        ],
+        "columns": [
+            {
+                "tech_column": "deposit_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#businessDefinition",
+                        "name": "businessDefinition",
+                        "label": "business definition",
+                        "comment": "None",
+                        "tokens": "businessdefinition",
+                        "score": 0.36
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.35
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#belongsToTable",
+                        "name": "belongsToTable",
+                        "label": "belongs to table",
+                        "comment": "None",
+                        "tokens": "belongstotable",
+                        "score": 0.33
+                    }
+                ]
+            },
+            {
+                "tech_column": "user_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.43
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile",
+                        "name": "resultsInVerifiedProfile",
+                        "label": "results in verified profile",
+                        "comment": "None",
+                        "tokens": "resultsinverifiedprofile",
+                        "score": 0.39
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "amount",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasColumn",
+                        "name": "hasColumn",
+                        "label": "has column",
+                        "comment": "None",
+                        "tokens": "hascolumn",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount",
+                        "name": "affectsLedgerAccount",
+                        "label": "affects ledger account",
+                        "comment": "None",
+                        "tokens": "affectsledgeraccount",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "method",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#caveat",
+                        "name": "caveat",
+                        "label": "caveat",
+                        "comment": "None",
+                        "tokens": "caveat",
+                        "score": 0.33
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#usageRecommendation",
+                        "name": "usageRecommendation",
+                        "label": "usage recommendation",
+                        "comment": "None",
+                        "tokens": "usagerecommendation",
+                        "score": 0.32
+                    }
+                ]
+            },
+            {
+                "tech_column": "deposit_date",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#postedAsLedgerLine",
+                        "name": "postedAsLedgerLine",
+                        "label": "posted as ledger line",
+                        "comment": "None",
+                        "tokens": "postedasledgerline",
+                        "score": 0.47
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#belongsToTable",
+                        "name": "belongsToTable",
+                        "label": "belongs to table",
+                        "comment": "None",
+                        "tokens": "belongstotable",
+                        "score": 0.46
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.42
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tech_table": "foundation.financial.deposits_enriched_v1",
+        "class_candidates": [
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#Deposit",
+                "name": "Deposit",
+                "label": "Deposit",
+                "comment": "None",
+                "tokens": "deposit",
+                "score": 0.52
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#EnrichedTable",
+                "name": "EnrichedTable",
+                "label": "Enriched table",
+                "comment": "A table produced by enrichment or denormalization (e.g., deposits_enriched_v1).",
+                "tokens": "enrichedtable",
+                "score": 0.48
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#DefinitionRule",
+                "name": "DefinitionRule",
+                "label": "Definition rule",
+                "comment": "None",
+                "tokens": "definitionrule",
+                "score": 0.41
+            }
+        ],
+        "columns": [
+            {
+                "tech_column": "deposit_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#businessDefinition",
+                        "name": "businessDefinition",
+                        "label": "business definition",
+                        "comment": "None",
+                        "tokens": "businessdefinition",
+                        "score": 0.36
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.35
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#belongsToTable",
+                        "name": "belongsToTable",
+                        "label": "belongs to table",
+                        "comment": "None",
+                        "tokens": "belongstotable",
+                        "score": 0.33
+                    }
+                ]
+            },
+            {
+                "tech_column": "user_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.43
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile",
+                        "name": "resultsInVerifiedProfile",
+                        "label": "results in verified profile",
+                        "comment": "None",
+                        "tokens": "resultsinverifiedprofile",
+                        "score": 0.39
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "amount",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasColumn",
+                        "name": "hasColumn",
+                        "label": "has column",
+                        "comment": "None",
+                        "tokens": "hascolumn",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount",
+                        "name": "affectsLedgerAccount",
+                        "label": "affects ledger account",
+                        "comment": "None",
+                        "tokens": "affectsledgeraccount",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "transaction_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasProviderTransaction",
+                        "name": "hasProviderTransaction",
+                        "label": "has provider transaction",
+                        "comment": "None",
+                        "tokens": "hasprovidertransaction",
+                        "score": 0.61
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.5
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#usageRecommendation",
+                        "name": "usageRecommendation",
+                        "label": "usage recommendation",
+                        "comment": "None",
+                        "tokens": "usagerecommendation",
+                        "score": 0.42
+                    }
+                ]
+            },
+            {
+                "tech_column": "status",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#initiatedByUser",
+                        "name": "initiatedByUser",
+                        "label": "initiated by user",
+                        "comment": "None",
+                        "tokens": "initiatedbyuser",
+                        "score": 0.48
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#assetName",
+                        "name": "assetName",
+                        "label": "asset name",
+                        "comment": "None",
+                        "tokens": "assetname",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#lastDocRefreshAt",
+                        "name": "lastDocRefreshAt",
+                        "label": "last documentation refresh",
+                        "comment": "None",
+                        "tokens": "lastdocrefreshat",
+                        "score": 0.36
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tech_table": "foundation.financial.withdrawals_v4",
+        "class_candidates": [
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#Withdrawal",
+                "name": "Withdrawal",
+                "label": "Withdrawal",
+                "comment": "None",
+                "tokens": "withdrawal",
+                "score": 0.83
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#DataAsset",
+                "name": "DataAsset",
+                "label": "Data asset",
+                "comment": "Anything cataloged: physical tables, columns, business terms, metrics, governance artifacts.",
+                "tokens": "dataasset",
+                "score": 0.35
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#Table",
+                "name": "Table",
+                "label": "Table",
+                "comment": "None",
+                "tokens": "table",
+                "score": 0.32
+            }
+        ],
+        "columns": [
+            {
+                "tech_column": "withdrawal_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasProviderTransaction",
+                        "name": "hasProviderTransaction",
+                        "label": "has provider transaction",
+                        "comment": "None",
+                        "tokens": "hasprovidertransaction",
+                        "score": 0.34
+                    }
+                ]
+            },
+            {
+                "tech_column": "user_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.43
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile",
+                        "name": "resultsInVerifiedProfile",
+                        "label": "results in verified profile",
+                        "comment": "None",
+                        "tokens": "resultsinverifiedprofile",
+                        "score": 0.39
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "amount",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasColumn",
+                        "name": "hasColumn",
+                        "label": "has column",
+                        "comment": "None",
+                        "tokens": "hascolumn",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount",
+                        "name": "affectsLedgerAccount",
+                        "label": "affects ledger account",
+                        "comment": "None",
+                        "tokens": "affectsledgeraccount",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "withdrawal_date",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#inferredDatatype",
+                        "name": "inferredDatatype",
+                        "label": "inferred datatype",
+                        "comment": "None",
+                        "tokens": "inferreddatatype",
+                        "score": 0.39
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasBalanceSnapshot",
+                        "name": "hasBalanceSnapshot",
+                        "label": "has balance snapshot",
+                        "comment": "None",
+                        "tokens": "hasbalancesnapshot",
+                        "score": 0.36
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#relatedToTable",
+                        "name": "relatedToTable",
+                        "label": "related to table",
+                        "comment": "Loose relationship (join keys, shared grain, common usage).",
+                        "tokens": "relatedtotable",
+                        "score": 0.34
+                    }
+                ]
+            },
+            {
+                "tech_column": "method",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#caveat",
+                        "name": "caveat",
+                        "label": "caveat",
+                        "comment": "None",
+                        "tokens": "caveat",
+                        "score": 0.33
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#usageRecommendation",
+                        "name": "usageRecommendation",
+                        "label": "usage recommendation",
+                        "comment": "None",
+                        "tokens": "usagerecommendation",
+                        "score": 0.32
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tech_table": "foundation.financial.withdrawals_enriched_v4",
+        "class_candidates": [
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#Withdrawal",
+                "name": "Withdrawal",
+                "label": "Withdrawal",
+                "comment": "None",
+                "tokens": "withdrawal",
+                "score": 0.61
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#EnrichedTable",
+                "name": "EnrichedTable",
+                "label": "Enriched table",
+                "comment": "A table produced by enrichment or denormalization (e.g., deposits_enriched_v1).",
+                "tokens": "enrichedtable",
+                "score": 0.44
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#TableNamingStandard",
+                "name": "TableNamingStandard",
+                "label": "Table naming standard",
+                "comment": "None",
+                "tokens": "tablenamingstandard",
+                "score": 0.33
+            }
+        ],
+        "columns": [
+            {
+                "tech_column": "withdrawal_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasProviderTransaction",
+                        "name": "hasProviderTransaction",
+                        "label": "has provider transaction",
+                        "comment": "None",
+                        "tokens": "hasprovidertransaction",
+                        "score": 0.34
+                    }
+                ]
+            },
+            {
+                "tech_column": "user_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.43
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile",
+                        "name": "resultsInVerifiedProfile",
+                        "label": "results in verified profile",
+                        "comment": "None",
+                        "tokens": "resultsinverifiedprofile",
+                        "score": 0.39
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "amount",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasColumn",
+                        "name": "hasColumn",
+                        "label": "has column",
+                        "comment": "None",
+                        "tokens": "hascolumn",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount",
+                        "name": "affectsLedgerAccount",
+                        "label": "affects ledger account",
+                        "comment": "None",
+                        "tokens": "affectsledgeraccount",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "status",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#initiatedByUser",
+                        "name": "initiatedByUser",
+                        "label": "initiated by user",
+                        "comment": "None",
+                        "tokens": "initiatedbyuser",
+                        "score": 0.48
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#assetName",
+                        "name": "assetName",
+                        "label": "asset name",
+                        "comment": "None",
+                        "tokens": "assetname",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#lastDocRefreshAt",
+                        "name": "lastDocRefreshAt",
+                        "label": "last documentation refresh",
+                        "comment": "None",
+                        "tokens": "lastdocrefreshat",
+                        "score": 0.36
+                    }
+                ]
+            },
+            {
+                "tech_column": "transaction_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasProviderTransaction",
+                        "name": "hasProviderTransaction",
+                        "label": "has provider transaction",
+                        "comment": "None",
+                        "tokens": "hasprovidertransaction",
+                        "score": 0.61
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.5
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#usageRecommendation",
+                        "name": "usageRecommendation",
+                        "label": "usage recommendation",
+                        "comment": "None",
+                        "tokens": "usagerecommendation",
+                        "score": 0.42
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tech_table": "foundation.financial.ledger_account_balances_v1",
+        "class_candidates": [
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#LedgerAccount",
+                "name": "LedgerAccount",
+                "label": "Ledger account",
+                "comment": "None",
+                "tokens": "ledgeraccount",
+                "score": 0.67
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#LedgerLine",
+                "name": "LedgerLine",
+                "label": "Ledger line",
+                "comment": "None",
+                "tokens": "ledgerline",
+                "score": 0.44
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#GovernanceAsset",
+                "name": "GovernanceAsset",
+                "label": "Governance asset",
+                "comment": "Standards/rules used to grade or validate documentation.",
+                "tokens": "governanceasset",
+                "score": 0.44
+            }
+        ],
+        "columns": [
+            {
+                "tech_column": "account_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasColumn",
+                        "name": "hasColumn",
+                        "label": "has column",
+                        "comment": "None",
+                        "tokens": "hascolumn",
+                        "score": 0.53
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount",
+                        "name": "affectsLedgerAccount",
+                        "label": "affects ledger account",
+                        "comment": "None",
+                        "tokens": "affectsledgeraccount",
+                        "score": 0.47
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.42
+                    }
+                ]
+            },
+            {
+                "tech_column": "user_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.43
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile",
+                        "name": "resultsInVerifiedProfile",
+                        "label": "results in verified profile",
+                        "comment": "None",
+                        "tokens": "resultsinverifiedprofile",
+                        "score": 0.39
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "balance",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasBalanceSnapshot",
+                        "name": "hasBalanceSnapshot",
+                        "label": "has balance snapshot",
+                        "comment": "None",
+                        "tokens": "hasbalancesnapshot",
+                        "score": 0.56
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#enriches",
+                        "name": "enriches",
+                        "label": "enriches",
+                        "comment": "Enriched table adds context/features to the base table.",
+                        "tokens": "enriches",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasColumn",
+                        "name": "hasColumn",
+                        "label": "has column",
+                        "comment": "None",
+                        "tokens": "hascolumn",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "as_of_date",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#lastDocRefreshAt",
+                        "name": "lastDocRefreshAt",
+                        "label": "last documentation refresh",
+                        "comment": "None",
+                        "tokens": "lastdocrefreshat",
+                        "score": 0.46
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#assetName",
+                        "name": "assetName",
+                        "label": "asset name",
+                        "comment": "None",
+                        "tokens": "assetname",
+                        "score": 0.42
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasVerificationAttempt",
+                        "name": "hasVerificationAttempt",
+                        "label": "has verification attempt",
+                        "comment": "None",
+                        "tokens": "hasverificationattempt",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "currency",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.47
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#isPrimaryKey",
+                        "name": "isPrimaryKey",
+                        "label": "is primary key",
+                        "comment": "None",
+                        "tokens": "isprimarykey",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tech_table": "foundation.financial.worldpay_transactions",
+        "class_candidates": [
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#WorldpayTransaction",
+                "name": "WorldpayTransaction",
+                "label": "Worldpay transaction",
+                "comment": "None",
+                "tokens": "worldpaytransaction",
+                "score": 0.95
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#PaymentProviderTransaction",
+                "name": "PaymentProviderTransaction",
+                "label": "Payment provider transaction",
+                "comment": "None",
+                "tokens": "paymentprovidertransaction",
+                "score": 0.6
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#DataAsset",
+                "name": "DataAsset",
+                "label": "Data asset",
+                "comment": "Anything cataloged: physical tables, columns, business terms, metrics, governance artifacts.",
+                "tokens": "dataasset",
+                "score": 0.4
+            }
+        ],
+        "columns": [
+            {
+                "tech_column": "transaction_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasProviderTransaction",
+                        "name": "hasProviderTransaction",
+                        "label": "has provider transaction",
+                        "comment": "None",
+                        "tokens": "hasprovidertransaction",
+                        "score": 0.61
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.5
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#usageRecommendation",
+                        "name": "usageRecommendation",
+                        "label": "usage recommendation",
+                        "comment": "None",
+                        "tokens": "usagerecommendation",
+                        "score": 0.42
+                    }
+                ]
+            },
+            {
+                "tech_column": "transaction_type",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasProviderTransaction",
+                        "name": "hasProviderTransaction",
+                        "label": "has provider transaction",
+                        "comment": "None",
+                        "tokens": "hasprovidertransaction",
+                        "score": 0.58
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.47
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#governanceScore",
+                        "name": "governanceScore",
+                        "label": "governance score (0-100)",
+                        "comment": "None",
+                        "tokens": "governancescore",
+                        "score": 0.45
+                    }
+                ]
+            },
+            {
+                "tech_column": "amount",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasColumn",
+                        "name": "hasColumn",
+                        "label": "has column",
+                        "comment": "None",
+                        "tokens": "hascolumn",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount",
+                        "name": "affectsLedgerAccount",
+                        "label": "affects ledger account",
+                        "comment": "None",
+                        "tokens": "affectsledgeraccount",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "status",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#initiatedByUser",
+                        "name": "initiatedByUser",
+                        "label": "initiated by user",
+                        "comment": "None",
+                        "tokens": "initiatedbyuser",
+                        "score": 0.48
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#assetName",
+                        "name": "assetName",
+                        "label": "asset name",
+                        "comment": "None",
+                        "tokens": "assetname",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#lastDocRefreshAt",
+                        "name": "lastDocRefreshAt",
+                        "label": "last documentation refresh",
+                        "comment": "None",
+                        "tokens": "lastdocrefreshat",
+                        "score": 0.36
+                    }
+                ]
+            },
+            {
+                "tech_column": "user_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.43
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile",
+                        "name": "resultsInVerifiedProfile",
+                        "label": "results in verified profile",
+                        "comment": "None",
+                        "tokens": "resultsinverifiedprofile",
+                        "score": 0.39
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.38
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tech_table": "foundation.account.authgateway_session_created_events",
+        "class_candidates": [
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#AuthSession",
+                "name": "AuthSession",
+                "label": "Auth session",
+                "comment": "None",
+                "tokens": "authsession",
+                "score": 0.49
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#DocumentationRefreshCycle",
+                "name": "DocumentationRefreshCycle",
+                "label": "Documentation refresh cycle",
+                "comment": "Automated refresh to keep documentation fresh based on query patterns.",
+                "tokens": "documentationrefreshcycle",
+                "score": 0.37
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#VerificationAttempt",
+                "name": "VerificationAttempt",
+                "label": "Verification attempt",
+                "comment": "None",
+                "tokens": "verificationattempt",
+                "score": 0.34
+            }
+        ],
+        "columns": [
+            {
+                "tech_column": "session_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.58
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#businessDefinition",
+                        "name": "businessDefinition",
+                        "label": "business definition",
+                        "comment": "None",
+                        "tokens": "businessdefinition",
+                        "score": 0.5
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#freshnessCadenceDays",
+                        "name": "freshnessCadenceDays",
+                        "label": "refresh cadence (days)",
+                        "comment": "None",
+                        "tokens": "freshnesscadencedays",
+                        "score": 0.4
+                    }
+                ]
+            },
+            {
+                "tech_column": "user_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.43
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile",
+                        "name": "resultsInVerifiedProfile",
+                        "label": "results in verified profile",
+                        "comment": "None",
+                        "tokens": "resultsinverifiedprofile",
+                        "score": 0.39
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "success",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#sourceURL",
+                        "name": "sourceURL",
+                        "label": "source URL",
+                        "comment": "None",
+                        "tokens": "sourceurl",
+                        "score": 0.5
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.48
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#enriches",
+                        "name": "enriches",
+                        "label": "enriches",
+                        "comment": "Enriched table adds context/features to the base table.",
+                        "tokens": "enriches",
+                        "score": 0.4
+                    }
+                ]
+            },
+            {
+                "tech_column": "device_type",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#enriches",
+                        "name": "enriches",
+                        "label": "enriches",
+                        "comment": "Enriched table adds context/features to the base table.",
+                        "tokens": "enriches",
+                        "score": 0.42
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#inferredDatatype",
+                        "name": "inferredDatatype",
+                        "label": "inferred datatype",
+                        "comment": "None",
+                        "tokens": "inferreddatatype",
+                        "score": 0.37
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#isForeignKey",
+                        "name": "isForeignKey",
+                        "label": "is foreign key",
+                        "comment": "None",
+                        "tokens": "isforeignkey",
+                        "score": 0.35
+                    }
+                ]
+            },
+            {
+                "tech_column": "created_at",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#relatedToTable",
+                        "name": "relatedToTable",
+                        "label": "related to table",
+                        "comment": "Loose relationship (join keys, shared grain, common usage).",
+                        "tokens": "relatedtotable",
+                        "score": 0.58
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#caveat",
+                        "name": "caveat",
+                        "label": "caveat",
+                        "comment": "None",
+                        "tokens": "caveat",
+                        "score": 0.5
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#inferredDatatype",
+                        "name": "inferredDatatype",
+                        "label": "inferred datatype",
+                        "comment": "None",
+                        "tokens": "inferreddatatype",
+                        "score": 0.46
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tech_table": "foundation.account.verification_attempt_v1",
+        "class_candidates": [
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#VerificationAttempt",
+                "name": "VerificationAttempt",
+                "label": "Verification attempt",
+                "comment": "None",
+                "tokens": "verificationattempt",
+                "score": 0.9
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#DefinitionRule",
+                "name": "DefinitionRule",
+                "label": "Definition rule",
+                "comment": "None",
+                "tokens": "definitionrule",
+                "score": 0.43
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#VerifiedUserProfile",
+                "name": "VerifiedUserProfile",
+                "label": "Verified user profile",
+                "comment": "None",
+                "tokens": "verifieduserprofile",
+                "score": 0.38
+            }
+        ],
+        "columns": [
+            {
+                "tech_column": "attempt_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasVerificationAttempt",
+                        "name": "hasVerificationAttempt",
+                        "label": "has verification attempt",
+                        "comment": "None",
+                        "tokens": "hasverificationattempt",
+                        "score": 0.44
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#relatedToTable",
+                        "name": "relatedToTable",
+                        "label": "related to table",
+                        "comment": "Loose relationship (join keys, shared grain, common usage).",
+                        "tokens": "relatedtotable",
+                        "score": 0.33
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.33
+                    }
+                ]
+            },
+            {
+                "tech_column": "user_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.43
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile",
+                        "name": "resultsInVerifiedProfile",
+                        "label": "results in verified profile",
+                        "comment": "None",
+                        "tokens": "resultsinverifiedprofile",
+                        "score": 0.39
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "verification_type",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasVerificationAttempt",
+                        "name": "hasVerificationAttempt",
+                        "label": "has verification attempt",
+                        "comment": "None",
+                        "tokens": "hasverificationattempt",
+                        "score": 0.72
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#inferredDatatype",
+                        "name": "inferredDatatype",
+                        "label": "inferred datatype",
+                        "comment": "None",
+                        "tokens": "inferreddatatype",
+                        "score": 0.48
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#usageRecommendation",
+                        "name": "usageRecommendation",
+                        "label": "usage recommendation",
+                        "comment": "None",
+                        "tokens": "usagerecommendation",
+                        "score": 0.44
+                    }
+                ]
+            },
+            {
+                "tech_column": "result",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#sourceURL",
+                        "name": "sourceURL",
+                        "label": "source URL",
+                        "comment": "None",
+                        "tokens": "sourceurl",
+                        "score": 0.53
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#enriches",
+                        "name": "enriches",
+                        "label": "enriches",
+                        "comment": "Enriched table adds context/features to the base table.",
+                        "tokens": "enriches",
+                        "score": 0.43
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#relatedToTable",
+                        "name": "relatedToTable",
+                        "label": "related to table",
+                        "comment": "Loose relationship (join keys, shared grain, common usage).",
+                        "tokens": "relatedtotable",
+                        "score": 0.4
+                    }
+                ]
+            },
+            {
+                "tech_column": "attempted_at",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasVerificationAttempt",
+                        "name": "hasVerificationAttempt",
+                        "label": "has verification attempt",
+                        "comment": "None",
+                        "tokens": "hasverificationattempt",
+                        "score": 0.41
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#relatedToTable",
+                        "name": "relatedToTable",
+                        "label": "related to table",
+                        "comment": "Loose relationship (join keys, shared grain, common usage).",
+                        "tokens": "relatedtotable",
+                        "score": 0.38
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount",
+                        "name": "affectsLedgerAccount",
+                        "label": "affects ledger account",
+                        "comment": "None",
+                        "tokens": "affectsledgeraccount",
+                        "score": 0.38
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tech_table": "foundation.account.verified_user_details",
+        "class_candidates": [
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#VerifiedUserProfile",
+                "name": "VerifiedUserProfile",
+                "label": "Verified user profile",
+                "comment": "None",
+                "tokens": "verifieduserprofile",
+                "score": 0.7
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#EnrichedTable",
+                "name": "EnrichedTable",
+                "label": "Enriched table",
+                "comment": "A table produced by enrichment or denormalization (e.g., deposits_enriched_v1).",
+                "tokens": "enrichedtable",
+                "score": 0.47
+            },
+            {
+                "uri": "http://example.org/fanduel/data-democratization-ontology#VerificationAttempt",
+                "name": "VerificationAttempt",
+                "label": "Verification attempt",
+                "comment": "None",
+                "tokens": "verificationattempt",
+                "score": 0.4
+            }
+        ],
+        "columns": [
+            {
+                "tech_column": "user_id",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#purpose",
+                        "name": "purpose",
+                        "label": "purpose",
+                        "comment": "None",
+                        "tokens": "purpose",
+                        "score": 0.43
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile",
+                        "name": "resultsInVerifiedProfile",
+                        "label": "results in verified profile",
+                        "comment": "None",
+                        "tokens": "resultsinverifiedprofile",
+                        "score": 0.39
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasAuthSession",
+                        "name": "hasAuthSession",
+                        "label": "has auth session",
+                        "comment": "None",
+                        "tokens": "hasauthsession",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "verification_level",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasVerificationAttempt",
+                        "name": "hasVerificationAttempt",
+                        "label": "has verification attempt",
+                        "comment": "None",
+                        "tokens": "hasverificationattempt",
+                        "score": 0.65
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile",
+                        "name": "resultsInVerifiedProfile",
+                        "label": "results in verified profile",
+                        "comment": "None",
+                        "tokens": "resultsinverifiedprofile",
+                        "score": 0.43
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#usageRecommendation",
+                        "name": "usageRecommendation",
+                        "label": "usage recommendation",
+                        "comment": "None",
+                        "tokens": "usagerecommendation",
+                        "score": 0.43
+                    }
+                ]
+            },
+            {
+                "tech_column": "verified_date",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#inferredDatatype",
+                        "name": "inferredDatatype",
+                        "label": "inferred datatype",
+                        "comment": "None",
+                        "tokens": "inferreddatatype",
+                        "score": 0.55
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasVerificationAttempt",
+                        "name": "hasVerificationAttempt",
+                        "label": "has verification attempt",
+                        "comment": "None",
+                        "tokens": "hasverificationattempt",
+                        "score": 0.51
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile",
+                        "name": "resultsInVerifiedProfile",
+                        "label": "results in verified profile",
+                        "comment": "None",
+                        "tokens": "resultsinverifiedprofile",
+                        "score": 0.49
+                    }
+                ]
+            },
+            {
+                "tech_column": "country",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasColumn",
+                        "name": "hasColumn",
+                        "label": "has column",
+                        "comment": "None",
+                        "tokens": "hascolumn",
+                        "score": 0.5
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#documents",
+                        "name": "documents",
+                        "label": "documents",
+                        "comment": "Links business terms/metrics to the assets they define.",
+                        "tokens": "documents",
+                        "score": 0.5
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#sourceURL",
+                        "name": "sourceURL",
+                        "label": "source URL",
+                        "comment": "None",
+                        "tokens": "sourceurl",
+                        "score": 0.38
+                    }
+                ]
+            },
+            {
+                "tech_column": "active",
+                "prop_candidates": [
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#caveat",
+                        "name": "caveat",
+                        "label": "caveat",
+                        "comment": "None",
+                        "tokens": "caveat",
+                        "score": 0.5
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#assetName",
+                        "name": "assetName",
+                        "label": "asset name",
+                        "comment": "None",
+                        "tokens": "assetname",
+                        "score": 0.4
+                    },
+                    {
+                        "uri": "http://example.org/fanduel/data-democratization-ontology#hasVerificationAttempt",
+                        "name": "hasVerificationAttempt",
+                        "label": "has verification attempt",
+                        "comment": "None",
+                        "tokens": "hasverificationattempt",
+                        "score": 0.36
+                    }
+                ]
+            }
+        ]
+    }
+]

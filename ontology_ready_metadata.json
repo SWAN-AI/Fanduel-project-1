@@ -1,0 +1,394 @@
+{
+    "tables": [
+        {
+            "table_name": "foundation_financial_ledger_lines",
+            "physical_name": "foundation.financial.ledger_lines_enriched_v1",
+            "table_type": "ENRICHED",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "ledger_line_id",
+                    "data_type": "integer",
+                    "description": ""
+                },
+                {
+                    "name": "account_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "transaction_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "entry_date",
+                    "data_type": "datetime",
+                    "description": ""
+                },
+                {
+                    "name": "amount",
+                    "data_type": "decimal",
+                    "description": ""
+                }
+            ],
+            "description": "This is the ENRICHED version of the foundation_financial_ledger_lines concept."
+        },
+        {
+            "table_name": "foundation_financial_deposits",
+            "physical_name": "foundation.financial.deposits_v4",
+            "table_type": "RAW",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "deposit_id",
+                    "data_type": "integer",
+                    "description": ""
+                },
+                {
+                    "name": "user_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "amount",
+                    "data_type": "decimal",
+                    "description": ""
+                },
+                {
+                    "name": "method",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "deposit_date",
+                    "data_type": "datetime",
+                    "description": ""
+                }
+            ],
+            "description": "This is the RAW version of the foundation_financial_deposits concept."
+        },
+        {
+            "table_name": "foundation_financial_deposits",
+            "physical_name": "foundation.financial.deposits_enriched_v1",
+            "table_type": "ENRICHED",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "deposit_id",
+                    "data_type": "integer",
+                    "description": ""
+                },
+                {
+                    "name": "user_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "amount",
+                    "data_type": "decimal",
+                    "description": ""
+                },
+                {
+                    "name": "transaction_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "status",
+                    "data_type": "string",
+                    "description": ""
+                }
+            ],
+            "description": "This is the ENRICHED version of the foundation_financial_deposits concept."
+        },
+        {
+            "table_name": "foundation_financial_withdrawals",
+            "physical_name": "foundation.financial.withdrawals_v4",
+            "table_type": "RAW",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "withdrawal_id",
+                    "data_type": "integer",
+                    "description": ""
+                },
+                {
+                    "name": "user_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "amount",
+                    "data_type": "decimal",
+                    "description": ""
+                },
+                {
+                    "name": "withdrawal_date",
+                    "data_type": "datetime",
+                    "description": ""
+                },
+                {
+                    "name": "method",
+                    "data_type": "string",
+                    "description": ""
+                }
+            ],
+            "description": "This is the RAW version of the foundation_financial_withdrawals concept."
+        },
+        {
+            "table_name": "foundation_financial_withdrawals",
+            "physical_name": "foundation.financial.withdrawals_enriched_v4",
+            "table_type": "ENRICHED",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "withdrawal_id",
+                    "data_type": "integer",
+                    "description": ""
+                },
+                {
+                    "name": "user_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "amount",
+                    "data_type": "decimal",
+                    "description": ""
+                },
+                {
+                    "name": "status",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "transaction_id",
+                    "data_type": "string",
+                    "description": ""
+                }
+            ],
+            "description": "This is the ENRICHED version of the foundation_financial_withdrawals concept."
+        },
+        {
+            "table_name": "foundation_financial_ledger_account_balances",
+            "physical_name": "foundation.financial.ledger_account_balances_v1",
+            "table_type": "RAW",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "account_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "user_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "balance",
+                    "data_type": "decimal",
+                    "description": ""
+                },
+                {
+                    "name": "as_of_date",
+                    "data_type": "date",
+                    "description": ""
+                },
+                {
+                    "name": "currency",
+                    "data_type": "string",
+                    "description": ""
+                }
+            ],
+            "description": "This is the RAW version of the foundation_financial_ledger_account_balances concept."
+        },
+        {
+            "table_name": "foundation_financial_worldpay_transactions",
+            "physical_name": "foundation.financial.worldpay_transactions",
+            "table_type": "RAW",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "transaction_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "transaction_type",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "amount",
+                    "data_type": "decimal",
+                    "description": ""
+                },
+                {
+                    "name": "status",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "user_id",
+                    "data_type": "string",
+                    "description": ""
+                }
+            ],
+            "description": "This is the RAW version of the foundation_financial_worldpay_transactions concept."
+        },
+        {
+            "table_name": "foundation_account_authgateway_session_created_events",
+            "physical_name": "foundation.account.authgateway_session_created_events",
+            "table_type": "RAW",
+            "domain": "Account",
+            "columns": [
+                {
+                    "name": "session_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "user_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "success",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "device_type",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "created_at",
+                    "data_type": "datetime",
+                    "description": ""
+                }
+            ],
+            "description": "This is the RAW version of the foundation_account_authgateway_session_created_events concept."
+        },
+        {
+            "table_name": "foundation_account_verification_attempt",
+            "physical_name": "foundation.account.verification_attempt_v1",
+            "table_type": "RAW",
+            "domain": "Account",
+            "columns": [
+                {
+                    "name": "attempt_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "user_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "verification_type",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "result",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "attempted_at",
+                    "data_type": "datetime",
+                    "description": ""
+                }
+            ],
+            "description": "This is the RAW version of the foundation_account_verification_attempt concept."
+        },
+        {
+            "table_name": "foundation_account_verified_user_details",
+            "physical_name": "foundation.account.verified_user_details",
+            "table_type": "RAW",
+            "domain": "Account",
+            "columns": [
+                {
+                    "name": "user_id",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "verification_level",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "verified_date",
+                    "data_type": "datetime",
+                    "description": ""
+                },
+                {
+                    "name": "country",
+                    "data_type": "string",
+                    "description": ""
+                },
+                {
+                    "name": "active",
+                    "data_type": "string",
+                    "description": ""
+                }
+            ],
+            "description": "This is the RAW version of the foundation_account_verified_user_details concept."
+        }
+    ],
+    "relationships": [
+        {
+            "source_table": "foundation_financial_deposits",
+            "source_column": "account_id",
+            "target_table": "foundation_account_verified_user_details",
+            "target_column": "user_id",
+            "relationship_type": "belongs_to",
+            "description": "Deposits are made into accounts owned by verified users."
+        },
+        {
+            "source_table": "foundation_financial_withdrawals",
+            "source_column": "account_id",
+            "target_table": "foundation_account_verified_user_details",
+            "target_column": "user_id",
+            "relationship_type": "belongs_to",
+            "description": "Withdrawals are performed by users associated with accounts."
+        },
+        {
+            "source_table": "foundation_financial_ledger_account_balances",
+            "source_column": "account_id",
+            "target_table": "foundation_account_verified_user_details",
+            "target_column": "user_id",
+            "relationship_type": "account_owner",
+            "description": "Ledger account balances correspond to verified users."
+        },
+        {
+            "source_table": "foundation_account_authgateway_session_created_events",
+            "source_column": "user_id",
+            "target_table": "foundation_account_verified_user_details",
+            "target_column": "user_id",
+            "relationship_type": "session_of",
+            "description": "Authentication sessions belong to verified users."
+        },
+        {
+            "source_table": "foundation_account_verification_attempt",
+            "source_column": "user_id",
+            "target_table": "foundation_account_verified_user_details",
+            "target_column": "user_id",
+            "relationship_type": "verification_event",
+            "description": "Verification attempts relate to user identity validation."
+        },
+        {
+            "source_table": "foundation_financial_worldpay_transactions",
+            "source_column": "account_id",
+            "target_table": "foundation_account_verified_user_details",
+            "target_column": "user_id",
+            "relationship_type": "payment_transaction",
+            "description": "Worldpay transactions originate from user-linked accounts."
+        }
+    ]
+}
