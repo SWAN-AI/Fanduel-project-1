@@ -1,0 +1,63 @@
+[
+  {
+    "table": "foundation_financial_deposits",
+    "type": "CROSS_TABLE_STANDARDIZE",
+    "column": "amount",
+    "fix": "Standardize definition for amount using canonical wording: 'The monetary value of the transaction, in the currency used by the system.' Add a short table-specific qualifier: 'For deposits, this is the amount deposited.'"
+  },
+  {
+    "table": "foundation_financial_withdrawals",
+    "type": "CROSS_TABLE_STANDARDIZE",
+    "column": "amount",
+    "fix": "Standardize definition for amount using canonical wording: 'The monetary value of the transaction, in the currency used by the system.' Add a short table-specific qualifier: 'For withdrawals, this is the amount withdrawn.'"
+  },
+  {
+    "table": "foundation_financial_ledger_lines",
+    "type": "CROSS_TABLE_STANDARDIZE",
+    "column": "amount",
+    "fix": "Standardize definition for amount using canonical wording: 'The monetary value of the transaction, in the currency used by the system.' Add a short table-specific qualifier: 'For ledger lines, this is the line-item amount recorded in the ledger.'"
+  },
+  {
+    "table": "foundation_financial_worldpay_transactions",
+    "type": "CROSS_TABLE_STANDARDIZE",
+    "column": "amount",
+    "fix": "Standardize definition for amount using canonical wording: 'The monetary value of the transaction, in the currency used by the system.' Add a short table-specific qualifier: 'For Worldpay transactions, this is the payment transaction amount.'"
+  },
+
+  {
+    "table": "foundation_financial_deposits",
+    "type": "CROSS_TABLE_STANDARDIZE",
+    "column": "user_id",
+    "fix": "Standardize definition for user_id using canonical wording: 'The unique identifier of the user associated with this record.' Add a role qualifier: 'For deposits, this is the user who initiated the deposit.'"
+  },
+  {
+    "table": "foundation_financial_withdrawals",
+    "type": "CROSS_TABLE_STANDARDIZE",
+    "column": "user_id",
+    "fix": "Standardize definition for user_id using canonical wording: 'The unique identifier of the user associated with this record.' Add a role qualifier: 'For withdrawals, this is the user who initiated the withdrawal.'"
+  },
+  {
+    "table": "foundation_financial_worldpay_transactions",
+    "type": "CROSS_TABLE_STANDARDIZE",
+    "column": "user_id",
+    "fix": "Standardize definition for user_id using canonical wording: 'The unique identifier of the user associated with this record.' Add a role qualifier: 'For Worldpay transactions, this is the user who initiated the payment.'"
+  },
+  {
+    "table": "foundation_financial_ledger_account_balances",
+    "type": "CROSS_TABLE_STANDARDIZE",
+    "column": "user_id",
+    "fix": "Standardize definition for user_id using canonical wording: 'The unique identifier of the user associated with this record.' Add a role qualifier: 'For account balances, this is the user associated with the account balance.'"
+  },
+  {
+    "table": "foundation_account_verification_attempt",
+    "type": "CROSS_TABLE_STANDARDIZE",
+    "column": "user_id",
+    "fix": "Standardize definition for user_id using canonical wording: 'The unique identifier of the user associated with this record.' Add a role qualifier: 'For verification attempts, this is the user whose account is being verified.'"
+  },
+  {
+    "table": "foundation_account_verified_user_details",
+    "type": "CROSS_TABLE_STANDARDIZE",
+    "column": "user_id",
+    "fix": "Standardize definition for user_id using canonical wording: 'The unique identifier of the user associated with this record.' Add a role qualifier: 'For verified user details, this is the user whose details are recorded.'"
+  }
+]
