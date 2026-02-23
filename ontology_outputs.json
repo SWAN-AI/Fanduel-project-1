@@ -1,0 +1,157 @@
+[
+  {
+    "table": "foundation.financial.ledger_lines_enriched_v1",
+    "output": {
+      "governance_doc_markdown": "| Purpose                                 | Plain-English Definition                                                   | Usage Notes                                                                                         | Example SQL Queries                                                                                            |\n-------------------------------------------|------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|\n| Ledger line identification             | A unique identifier for each ledger line in the financial ledger.                        | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE ledger_line_id = 123;\\\n|\n| Ledger account identification           | A unique identifier for each ledger account in the financial ledger.                       | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE account_id = 456;\\\n|\n| Transaction identification              | A unique identifier for each transaction in the financial ledger.                          | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE transaction_id = 789;\\\n|\n| Entry date identification              | The date when the entry was made in the financial ledger.                                   | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE entry_date = '2022-01-01';\\\n|\n| Amount identification                 | The total value of the transaction in the financial ledger.                                | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE amount = 1000;\\\n|\n| Governance score (0-100)              | A governance score indicating the quality of data in the financial ledger.                    | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE governanceScore = 80;\\\n|\n| Has column                             | Indicates if a column has been enriched with additional information.                         | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE hasColumn = true;\\\n|\n| Documents                             | Links business terms/metrics to the assets they define.                                   | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE documents = 'yes';\\\n|\n| Has provider transaction              | Indicates if a transaction has been provided by an external source.                         | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE hasProviderTransaction = true;\\\n|\n| Has auth session                      | Indicates if a transaction has been authenticated by an external source.                     | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE hasAuthSession = true;\\\n|\n| Usage recommendation                 | Indicates if a transaction requires additional review or usage guidance.                    | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE usagerecommendation = true;\\\n|\n| Belongs to table                      | Indicates if a row belongs to a specific table.                                           | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE belongstotable = true;\\\n|\n| Enriches                              | Indicates if the row has been enriched with additional information.                          | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE enriches = true;\\\n|\n| Inferred datatype                   | The data type inferred from the entry date.                                            | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE inferredDatatype = 'date';\\\n|\n| Affects ledger account               | Indicates if a row affects the ledger account balance.                                   | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE affectsLedgerAccount = true;\\\n|\n| Documents                             | Links business terms/metrics to the assets they define.                                   | Must be used to link related records, not unique across all tables.                                 | \\\n\tSELECT * FROM foundation.financial.ledger_lines_enriched_v1 \\nWHERE documents = 'yes';\\\n|\n# No delta required",
+      "delta_ontology_ttl": [
+        "postedAsLedgerLine",
+        "affectsLedgerAccount",
+        "governanceScore",
+        "hasColumn",
+        "documents",
+        "hasProviderTransaction",
+        "hasAuthSession",
+        "usageRecommendation",
+        "belongstotable",
+        "enriches",
+        "inferredDatatype",
+        "affectsLedgerAccount",
+        "documents"
+      ],
+      "new_terms": []
+    }
+  },
+  {
+    "table": "foundation.financial.deposits_v4",
+    "output": {
+      "governance_doc_markdown": "Table Purpose/Context: The foundation_financial.deposits_v4 table contains information about deposits made to a financial institution.\n\nPlain-English Definitions:\n* deposit_id: Unique identifier for the deposit\n* user_id: Identifier for the user who made the deposit\n* amount: Amount of money deposited\n* method: Method used to make the deposit\n* deposit_date: Date the deposit was made\n\nUsage Notes:\n* Grains: Each row represents a single deposit\n* Joins/Keys: The table can be joined with other tables on user_id and deposit_date\n* Caveats: There may be some missing data for certain columns, especially amount and method\n\nExample SQL Queries:\nSELECT * FROM foundation_financial.deposits_v4 WHERE deposit_date = '2022-01-01'\nSELECT foundation_financial.deposits_v4.user_id, foundation_financial.deposits_v4.amount FROM foundation_financial.deposits_v4 GROUP BY user_id\n\n",
+      "delta_ontology_ttl": "# No delta required\n",
+      "new_terms": []
+    }
+  },
+  {
+    "table": "foundation.financial.deposits_enriched_v1",
+    "output": {
+      "governance_doc_markdown": "| Purpose | Plain-English Definition | Usage Notes | Example Queries ||| --- | --- | --- ||deposit_id | Unique identifier for each deposit | Primary key, unique to each deposit | SELECT * FROM foundation.financial.deposits_enriched_v1; ||user_id | Unique identifier for the user making a deposit | Foreign key referencing the users table | SELECT * FROM foundation.financial.deposits_enriched_v1 WHERE user_id = 123; ||amount | Amount of money deposited | Monetary value, cannot be null | SELECT SUM(amount) FROM foundation.financial.deposits_enriched_v1; ||transaction_id | Unique identifier for each transaction | Primary key, unique to each transaction | SELECT * FROM foundation.financial.deposits_enriched_v1 WHERE transaction_id = 456; ||status | Status of the deposit (e.g. pending, approved, etc.) | Enumerated value, cannot be null | SELECT COUNT(status) FROM foundation.financial.deposits_enriched_v1; \n\nExample queries can be used to retrieve specific data from the deposits enriched table.\n\nGrain: The basic unit of data in a database, which is typically a single row or record. Joins and keys are used to combine data from multiple tables. Caveats: Be careful when using joins as it can lead to incorrect results if not done correctly.",
+      "delta_ontology_ttl": "# No delta required",
+      "new_terms": []
+    }
+  },
+  {
+    "table": "foundation.financial.withdrawals_v4",
+    "output": {
+      "governance_doc_markdown": {
+        "purpose": "This governance document outlines the context, definitions, and usage notes for the foundation.financial.withdrawals_v4 table.\n\nSchema Context:\n{\n  \"table_name\": \"foundation.financial.withdrawals_v4\",\n  \"columns\": [\n    {\n      \"name\": \"withdrawal_id\",\n      \"type\": \"UNKNOWN\",\n      \"is_key\": false\n    },\n    {\n      \"name\": \"user_id\",\n      \"type\": \"UNKNOWN\",\n      \"is_key\": false\n    },\n    {\n      \"name\": \"amount\",\n      \"type\": \"UNKNOWN\",\n      \"is_key\": false\n    },\n    {\n      \"name\": \"withdrawal_date\",\n      \"type\": \"UNKNOWN\",\n      \"is_key\": false\n    },\n    {\n      \"name\": \"method\",\n      \"type\": \"UNKNOWN\",\n      \"is_key\": false\n    }\n  ],\n  \"primary_key\": [],\n  \"foreign_keys\": [\n  ]\n}\n\nMapping Context:\n{\n  \"technical_table\": \"foundation.financial.withdrawals_v4\",\n  \"table_candidates\": [\n    {\n      \"uri\": \"http://example.org/fanduel/data-democratization-ontology#Withdrawal\",\n      \"name\": \"Withdrawal\",\n      \"label\": \"Withdrawal\",\n      \"comment\": \"None\",\n      \"tokens\": \"withdrawal\",\n      \"score\": 0.83\n    },\n    {\n      \"uri\": \"http://example.org/fanduel/data-democratization-ontology#DataAsset\",\n      \"name\": \"DataAsset\",\n      \"label\": \"Data asset\",\n      \"comment\": \"Anything cataloged: physical tables, columns, business terms, metrics, governance artifacts.\",\n      \"tokens\": \"dataasset\",\n      \"score\": 0.35\n    },\n    {\n      \"uri\": \"http://example.org/fanduel/data-democratization-ontology#Table\",\n      \"name\": \"Table\",\n      \"label\": \"Table\",\n      \"comment\": \"None\",\n      \"tokens\": \"table\",\n      \"score\": 0.32\n    }\n  ],\n  \"columns\": [\n    {\n      \"technical_column\": \"withdrawal_id\",\n      \"property_candidates\": [\n        {\n          \"uri\": \"http://example.org/fanduel/data-democratization-ontology#hasProviderTransaction\",\n          \"name\": \"hasProviderTransaction\",\n          \"label\": \"has provider transaction\",\n          \"comment\": \"None\",\n          \"tokens\": \"hasprovidertransaction\",\n          \"score\": 0.34\n        }\n      ]\n    },\n    {\n      \"technical_column\": \"user_id\",\n      \"property_candidates\": [\n        {\n          \"uri\": \"http://example.org/fanduel/data-democratization-ontology#purpose\",\n          \"name\": \"purpose\",\n          \"label\": \"purpose\",\n          \"comment\": \"None\",\n          \"tokens\": \"purpose\",\n          \"score\": 0.43\n        },\n        {\n          \"uri\": \"http://example.org/fanduel/data-democratization-ontology#resultsInVerifiedProfile\",\n          \"name\": \"resultsInVerifiedProfile\",\n          \"label\": \"results in verified profile\",\n          \"comment\": \"None\",\n          \"tokens\": \"resultsinverifiedprofile\",\n          \"score\": 0.39\n        },\n        {\n          \"uri\": \"http://example.org/fanduel/data-democratization-ontology#hasAuthSession\",\n          \"name\": \"hasAuthSession\",\n          \"label\": \"has auth session\",\n          \"comment\": \"None\",\n          \"tokens\": \"hasauthsession\",\n          \"score\": 0.38\n        }\n      ]\n    },\n    {\n      \"technical_column\": \"amount\",\n      \"property_candidates\": [\n        {\n          \"uri\": \"http://example.org/fanduel/data-democratization-ontology#hasColumn\",\n          \"name\": \"hasColumn\",\n          \"label\": \"has column\",\n          \"comment\": \"None\",\n          \"tokens\": \"hascolumn\",\n          \"score\": 0.4\n        },\n        {\n          \"uri\": \"http://example.org/fanduel/data-democratization-ontology#documents\",\n          \"name\": \"documents\",\n          \"label\": \"documents\",\n          \"comment\": \"Links business terms/metrics to the assets they define.\",\n          \"tokens\": \"documents\",\n          \"score\": 0.4\n        },\n        {\n          \"uri\": \"http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount\",\n          \"name\": \"affectsLedgerAccount\",\n          \"label\": \"affects ledger account\",\n          \"comment\": \"None\",\n          \"tokens\": \"affectsledgeraccount\",\n          \"score\": 0.38\n        }\n      ]\n    },\n    {\n      \"technical_column\": \"withdrawal_date\",\n      \"property_candidates\": [\n        {\n          \"uri\": \"http://example.org/fanduel/data-democratization-ontology#inferredDatatype\",\n          \"name\": \"inferredDatatype\",\n          \"label\": \"inferred datatype\",\n          \"comment\": \"None\",\n          \"tokens\": \"inferreddatatype\",\n          \"score\": 0.39\n        },\n        {\n          \"uri\": \"http://example.org/fanduel/data-democratization-ontology#hasBalanceSnapshot\",\n          \"name\": \"hasBalanceSnapshot\",\n          \"label\": \"has balance snapshot\",\n          "
+      },
+      "new_terms": [],
+      "delta_ontology_ttl": "# No delta required"
+    }
+  },
+  {
+    "table": "foundation.financial.withdrawals_enriched_v4",
+    "output": {
+      "governance_doc_markdown": "| Purpose | Description | Usage Notes | Example Queries || --- | --- | --- | --- || Column Enrichment | Automated enrichment of financial tables in FANDUEL. | This table is enriched with additional columns based on the business rules defined in the ontology. Grains are updated, and any necessary joins or keys are performed. Caveat: The user may need to review the enriched data for accuracy. \\n\\n| Column Enrichment (e.g., deposits_enriched_v1) | This column enriches the financial table with additional columns based on the business rules defined in the ontology. Grains are updated, and any necessary joins or keys are performed. Caveat: The user may need to review the enriched data for accuracy. \\n\\n| Column Enrichment (e.g., transactions) | This column enriches the financial table with additional columns based on the business rules defined in the ontology. Grains are updated, and any necessary joins or keys are performed. Caveat: The user may need to review the enriched data for accuracy. \\n\\nExample SQL Queries:\\nSELECT * FROM foundation.financial.withdrawals_enriched_v4;\\nSELECT withdrawal_id, user_id, amount, status FROM foundation.financial.withdrawals_enriched_v4;\\nSELECT transaction_id, hasProviderTransaction, hasAuthSession FROM foundation.financial.withdrawals_enriched_v4;",
+      "delta_ontology_ttl": [
+        "hasProviderTransaction",
+        "hasAuthSession"
+      ],
+      "new_terms": []
+    }
+  },
+  {
+    "table": "foundation.financial.ledger_account_balances_v1",
+    "output": {
+      "governance_doc_markdown": "| Purpose/Context | Definition | Usage Notes | Grains/Joins/Keys | Caveats |\n| --- | --- | --- | --- | --- |\n| Ledger Account Balances V1 | A ledger account balance record contains information about the current balance of a specific ledger account. | Used for tracking and reporting ledger account balances. Grain: individual ledger account balances. Join key: account_id, user_id. Caveat: does not include historical data. | Join with LedgerAccount to get detailed information about the ledger account.\n| Ledger Account Balances V1 (Raw) | Raw ledger account balance data without any additional context or metadata. | Used for storing raw ledger account balance data. Grain: individual ledger account balances. Join key: account_id, user_id. Caveat: does not include any additional context or metadata. | \n| Usage Notes |\n| The Ledger Account Balances V1 table provides a standardized way to store and report ledger account balances.\n| This table can be used in conjunction with the LedgerAccount table to get more detailed information about each ledger account balance record.\n| \n| SQL Queries |\n| SELECT * FROM foundation.financial.ledger_account_balances_v1;\n| SELECT account_id, user_id, balance FROM foundation.financial.ledger_account_balances_v1 WHERE as_of_date = '2022-01-01';\n| \n| Delta Ontology TTL: []",
+      "delta_ontology_ttl": [
+        "http://example.org/fanduel/data-democratization-ontology#hasColumn",
+        "http://example.org/fanduel/data-democratization-ontology#affectsLedgerAccount",
+        "http://example.org/fanduel/data-democratization-ontology#documents"
+      ],
+      "new_terms": []
+    }
+  },
+  {
+    "table": "foundation.financial.worldpay_transactions",
+    "output": {
+      "governance_doc_markdown": {
+        "table_purpose": "This table stores raw data about financial transactions made through WorldPay.",
+        "table_context": "Each row in this table represents a single transaction, including its unique identifier, type, amount, status, and user associated with the transaction.",
+        "columns": [
+          {
+            "name": "transaction_id",
+            "plain_english_definition": "A unique identifier for each financial transaction made through WorldPay."
+          },
+          {
+            "name": "transaction_type",
+            "plain_english_definition": "The type of the financial transaction, such as donation or purchase."
+          },
+          {
+            "name": "amount",
+            "plain_english_definition": "The monetary value of the financial transaction."
+          },
+          {
+            "name": "status",
+            "plain_english_definition": "The current status of the financial transaction, such as pending or completed."
+          },
+          {
+            "name": "user_id",
+            "plain_english_definition": "The unique identifier for the user who initiated the financial transaction."
+          }
+        ],
+        "example_sql_queries": [
+          "SELECT * FROM foundation_financial_worldpay_transactions WHERE transaction_type = 'donation'"
+        ]
+      },
+      "delta_ontology_ttl": "# No delta required",
+      "new_terms": []
+    }
+  },
+  {
+    "table": "foundation.account.authgateway_session_created_events",
+    "output": {
+      "governance_doc_markdown": {
+        "purpose/context": "Records when a new session is created for an account in the Authgateway.",
+        "plain_english_definitions": {
+          "session_id": "A unique identifier for the session.",
+          "user_id": "The ID of the user associated with the session.",
+          "success": "A boolean value indicating whether the session creation was successful or not.",
+          "device_type": "The type of device used to create the session (e.g., mobile, desktop).",
+          "created_at": "The date and time when the session was created."
+        },
+        "usage_notes": "Grain: individual session events. Joins/keys: join on user_id with user table, join on session_id with session table. Caveats: handle cases where device_type is missing or unknown.",
+        "example_sql_queries": [
+          {
+            "sql": "SELECT * FROM foundation.account.authgateway_session_created_events WHERE user_id = ?",
+            "grain_size": 1
+          },
+          {
+            "sql": "SELECT * FROM foundation.account.authgateway_session_created_events JOIN user ON user_id = user.id",
+            "join_grain": "user"
+          },
+          {
+            "sql": "SELECT * FROM foundation.account.authgateway_session_created_events WHERE created_at >= ? AND created_at <= ?",
+            "date_range": true
+          }
+        ]
+      },
+      "delta_ontology_ttl": "# No delta required",
+      "new_terms": []
+    }
+  },
+  {
+    "table": "foundation.account.verification_attempt_v1",
+    "output": {
+      "governance_doc_markdown": "| Purpose/Context | Plain-English Definitions | Usage Notes | Example SQL Queries ||| --- | --- | --- | --- ||| Table purpose/context: \\\\",
+      "new_terms": [],
+      "delta_ontology_ttl": "# No delta required"
+    }
+  },
+  {
+    "table": "foundation.account.verified_user_details",
+    "output": {
+      "governance_doc_markdown": null,
+      "delta_ontology_ttl": "# No delta required",
+      "new_terms": []
+    }
+  }
+]
