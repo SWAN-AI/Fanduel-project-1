@@ -1,0 +1,272 @@
+[
+  {
+    "table_name": "foundation_financial_ledger_lines",
+    "table_purpose": "This table stores enriched financial ledger lines for the Foundation.",
+    "table_context": "Each row in this table represents a single financial transaction line, including its associated account and amount.",
+    "columns": [
+      {
+        "name": "ledger_line_id",
+        "plain_english_definition": "A unique identifier for each financial ledger line."
+      },
+      {
+        "name": "account_id",
+        "plain_english_definition": "The identifier of the account associated with this financial transaction line."
+      },
+      {
+        "name": "transaction_id",
+        "plain_english_definition": "A unique identifier for the financial transaction to which this line belongs."
+      },
+      {
+        "name": "entry_date",
+        "plain_english_definition": "The date when this financial transaction entry was made."
+      },
+      {
+        "name": "amount",
+        "plain_english_definition": "The monetary value of this financial transaction line."
+      }
+    ]
+  },
+  {
+    "table_name": "foundation_financial_deposits",
+    "table_purpose": "This table records all financial deposits made to the foundation.",
+    "table_context": "Each row in this table represents a single deposit transaction, including the user who made it, the amount deposited, and the method used.",
+    "columns": [
+      {
+        "name": "deposit_id",
+        "plain_english_definition": "A unique identifier for each deposit transaction."
+      },
+      {
+        "name": "user_id",
+        "plain_english_definition": "The ID of the user who made the deposit."
+      },
+      {
+        "name": "amount",
+        "plain_english_definition": "The amount of money deposited into the foundation's account."
+      },
+      {
+        "name": "method",
+        "plain_english_definition": "The method used to make the deposit, such as online banking or check deposit."
+      },
+      {
+        "name": "deposit_date",
+        "plain_english_definition": "The date and time when the deposit was made."
+      }
+    ]
+  },
+  {
+    "table_name": "foundation_financial_deposits",
+    "table_purpose": "This table records all financial deposits made to the foundation.",
+    "table_context": "Each row in this table represents a single deposit transaction, including the user who made it, the amount deposited, and the status of that deposit.",
+    "columns": [
+      {
+        "name": "deposit_id",
+        "plain_english_definition": "A unique identifier for each deposit transaction."
+      },
+      {
+        "name": "user_id",
+        "plain_english_definition": "The ID of the user who made the deposit."
+      },
+      {
+        "name": "amount",
+        "plain_english_definition": "The amount of money deposited into the foundation's account."
+      },
+      {
+        "name": "transaction_id",
+        "plain_english_definition": "A unique identifier for the financial transaction that recorded this deposit."
+      },
+      {
+        "name": "status",
+        "plain_english_definition": "The current status of the deposit (e.g., pending, approved, rejected)."
+      }
+    ]
+  },
+  {
+    "table_name": "foundation_financial_withdrawals",
+    "table_purpose": "This table records all financial withdrawals made from the foundation.",
+    "table_context": "Each row in this table represents a single withdrawal transaction, including the user who made it, the amount withdrawn, and the method used to withdraw the funds.",
+    "columns": [
+      {
+        "name": "withdrawal_id",
+        "plain_english_definition": "A unique identifier for each withdrawal transaction."
+      },
+      {
+        "name": "user_id",
+        "plain_english_definition": "The ID of the user who made the withdrawal."
+      },
+      {
+        "name": "amount",
+        "plain_english_definition": "The amount of money withdrawn in this transaction."
+      },
+      {
+        "name": "withdrawal_date",
+        "plain_english_definition": "The date and time when the withdrawal was made."
+      },
+      {
+        "name": "method",
+        "plain_english_definition": "The method used to withdraw the funds, such as check or electronic transfer."
+      }
+    ]
+  },
+  {
+    "table_name": "foundation_financial_withdrawals",
+    "table_purpose": "This table stores information about financial withdrawals made from a foundation.",
+    "table_context": "Each row in this table represents a single withdrawal transaction, including the user who made it, the amount withdrawn, and the status of that transaction.",
+    "columns": [
+      {
+        "name": "withdrawal_id",
+        "plain_english_definition": "A unique identifier for each withdrawal transaction."
+      },
+      {
+        "name": "user_id",
+        "plain_english_definition": "The ID of the user who made the withdrawal."
+      },
+      {
+        "name": "amount",
+        "plain_english_definition": "The amount of money withdrawn in the transaction."
+      },
+      {
+        "name": "status",
+        "plain_english_definition": "The current status of the withdrawal transaction (e.g., approved, rejected, pending)."
+      },
+      {
+        "name": "transaction_id",
+        "plain_english_definition": "A unique identifier for the financial transaction associated with this withdrawal."
+      }
+    ]
+  },
+  {
+    "table_name": "foundation_financial_ledger_account_balances",
+    "table_purpose": "This table stores the account balances for a given user and currency as of a specific date.",
+    "table_context": "Each row in this table represents the balance of a single financial account for a specific user, on a specific date, and in a specific currency.",
+    "columns": [
+      {
+        "name": "account_id",
+        "plain_english_definition": "The unique identifier for the financial account."
+      },
+      {
+        "name": "user_id",
+        "plain_english_definition": "The unique identifier for the user associated with this account balance."
+      },
+      {
+        "name": "balance",
+        "plain_english_definition": "The amount of money in the account, expressed in the currency specified."
+      },
+      {
+        "name": "as_of_date",
+        "plain_english_definition": "The date up to which the balance is valid."
+      },
+      {
+        "name": "currency",
+        "plain_english_definition": "The currency in which the account balance is expressed."
+      }
+    ]
+  },
+  {
+    "table_name": "foundation_financial_worldpay_transactions",
+    "table_purpose": "This table stores raw data about financial transactions made through WorldPay.",
+    "table_context": "Each row in this table represents a single transaction, including its unique identifier, type, amount, status, and user associated with the transaction.",
+    "columns": [
+      {
+        "name": "transaction_id",
+        "plain_english_definition": "A unique identifier for each financial transaction made through WorldPay."
+      },
+      {
+        "name": "transaction_type",
+        "plain_english_definition": "The type of the financial transaction, such as donation or purchase."
+      },
+      {
+        "name": "amount",
+        "plain_english_definition": "The monetary value of the financial transaction."
+      },
+      {
+        "name": "status",
+        "plain_english_definition": "The current status of the financial transaction, such as pending or completed."
+      },
+      {
+        "name": "user_id",
+        "plain_english_definition": "The unique identifier for the user who initiated the financial transaction."
+      }
+    ]
+  },
+  {
+    "table_name": "foundation_account_authgateway_session_created_events",
+    "table_purpose": "Records when a new session is created for an account in the Authgateway.",
+    "table_context": "This table stores information about each time a new session is created for an account in the Authgateway. It includes details such as the session ID, user ID, success status, device type, and creation timestamp.",
+    "columns": [
+      {
+        "name": "session_id",
+        "plain_english_definition": "A unique identifier for the session."
+      },
+      {
+        "name": "user_id",
+        "plain_english_definition": "The ID of the user associated with the session."
+      },
+      {
+        "name": "success",
+        "plain_english_definition": "A boolean value indicating whether the session creation was successful or not."
+      },
+      {
+        "name": "device_type",
+        "plain_english_definition": "The type of device used to create the session (e.g., mobile, desktop)."
+      },
+      {
+        "name": "created_at",
+        "plain_english_definition": "The date and time when the session was created."
+      }
+    ]
+  },
+  {
+    "table_name": "foundation_account_verification_attempt",
+    "table_purpose": "Stores information about each attempt to verify an account on the Foundation platform.",
+    "table_context": "Each row in this table represents a single verification attempt for a specific user, including the type of verification and its result.",
+    "columns": [
+      {
+        "name": "attempt_id",
+        "plain_english_definition": "A unique identifier for each verification attempt."
+      },
+      {
+        "name": "user_id",
+        "plain_english_definition": "The ID of the user whose account was being verified during this attempt."
+      },
+      {
+        "name": "verification_type",
+        "plain_english_definition": "The type of verification that was attempted, such as email or phone number."
+      },
+      {
+        "name": "result",
+        "plain_english_definition": "Whether the verification attempt was successful or not."
+      },
+      {
+        "name": "attempted_at",
+        "plain_english_definition": "The date and time when this verification attempt occurred."
+      }
+    ]
+  },
+  {
+    "table_name": "foundation_account_verified_user_details",
+    "table_purpose": "This table stores the verified user details for each foundation account.",
+    "table_context": "Each row in this table represents a single verified user detail record for a specific foundation account, including their verification level, country, and active status.",
+    "columns": [
+      {
+        "name": "user_id",
+        "plain_english_definition": "The unique identifier for the user associated with this verified user detail record."
+      },
+      {
+        "name": "verification_level",
+        "plain_english_definition": "The level of verification that has been completed for this user, such as email or government ID verification."
+      },
+      {
+        "name": "verified_date",
+        "plain_english_definition": "The date when the user's verification was completed."
+      },
+      {
+        "name": "country",
+        "plain_english_definition": "The country where the user is located."
+      },
+      {
+        "name": "active",
+        "plain_english_definition": "A flag indicating whether or not this user's account is currently active."
+      }
+    ]
+  }
+]
