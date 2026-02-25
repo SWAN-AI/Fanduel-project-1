@@ -1,0 +1,4446 @@
+{
+    "tables": [
+        {
+            "table_name": "financial",
+            "physical_name": "\"foundation_views.financial\"",
+            "table_type": "RAW",
+            "domain": "Finance",
+            "columns": [],
+            "canonical_id": "financial",
+            "description": ""
+        },
+        {
+            "table_name": "deposits",
+            "physical_name": "\"foundation_views.financial\".deposits",
+            "table_type": "RAW",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "additional_data",
+                    "data_type": "string",
+                    "canonical_id": "deposits.additional_data",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "ani_first_name_response_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.ani_first_name_response_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "ani_last_name_response_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.ani_last_name_response_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "auth_reference",
+                    "data_type": "string",
+                    "canonical_id": "deposits.auth_reference",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "automata_execution_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.automata_execution_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "bonus_transaction_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.bonus_transaction_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_card_type",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_card_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_debit",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_debit",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_issuing_bank",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_issuing_bank",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_paypal_email",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_paypal_email",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_prepaid",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_prepaid",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_venmo_user_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_venmo_user_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "brand",
+                    "data_type": "string",
+                    "canonical_id": "deposits.brand",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "counter_location_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.counter_location_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "credit_ledger_line_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.credit_ledger_line_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "data_source_priority",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.data_source_priority",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "decision_status",
+                    "data_type": "string",
+                    "canonical_id": "deposits.decision_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposit_amount",
+                    "data_type": "string",
+                    "canonical_id": "deposits.deposit_amount",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposit_complete_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.deposit_complete_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposit_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.deposit_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "deposit_payment_method_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.deposit_payment_method_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposit_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.deposit_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "error_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.error_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "event_creation_time",
+                    "data_type": "string",
+                    "canonical_id": "deposits.event_creation_time",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "event_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.event_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "fanduel_user_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.fanduel_user_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_partial_refund",
+                    "data_type": "string",
+                    "canonical_id": "deposits.is_partial_refund",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_top_up_payment",
+                    "data_type": "string",
+                    "canonical_id": "deposits.is_top_up_payment",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "landing_inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.landing_inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "ledger_transfers",
+                    "data_type": "string",
+                    "canonical_id": "deposits.ledger_transfers",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "notes",
+                    "data_type": "string",
+                    "canonical_id": "deposits.notes",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_method",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_method",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_method_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.payment_method_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "payment_method_type",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.payment_method_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_provider_instant_settle",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_provider_instant_settle",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_provider_reason_code",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.payment_provider_reason_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_provider_reason_code_message",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_provider_reason_code_message",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_provider_status",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.payment_provider_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_provider_status_message",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_provider_status_message",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_reference",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_reference",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_restriction",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_restriction",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_restrictions",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_restrictions",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_status",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_status_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_status_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_status_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.payment_status_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_account_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_account_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_account_number_last_four",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_account_number_last_four",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_auth_merchant_reference",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_auth_merchant_reference",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_auth_transaction_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_auth_transaction_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_bank_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_bank_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_payment_provider_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_payment_provider_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "performer_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.performer_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "processor_data",
+                    "data_type": "string",
+                    "canonical_id": "deposits.processor_data",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "processor_transaction_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.processor_transaction_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "product_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.product_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "product_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.product_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "refunded_amount",
+                    "data_type": "string",
+                    "canonical_id": "deposits.refunded_amount",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "refunded_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.refunded_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "refund_for_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.refund_for_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "retail_location",
+                    "data_type": "string",
+                    "canonical_id": "deposits.retail_location",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "sns_message_timestamp",
+                    "data_type": "string",
+                    "canonical_id": "deposits.sns_message_timestamp",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_payment_method",
+                    "data_type": "string",
+                    "canonical_id": "deposits.source_payment_method",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_payment_method_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.source_payment_method_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_product_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.source_product_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_type",
+                    "data_type": "string",
+                    "canonical_id": "deposits.source_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_updated_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.source_updated_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "stg__inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.stg__inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "stg__updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.stg__updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "additional_data",
+                    "data_type": "string",
+                    "canonical_id": "deposits.additional_data",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "amount_authorized",
+                    "data_type": "string",
+                    "canonical_id": "deposits.amount_authorized",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "amount_submitted_for_settlement",
+                    "data_type": "string",
+                    "canonical_id": "deposits.amount_submitted_for_settlement",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "ani_first_name_response_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.ani_first_name_response_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "ani_last_name_response_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.ani_last_name_response_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "authorization_expired_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.authorization_expired_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "authorized_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.authorized_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "authorizing_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.authorizing_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "auth_reference",
+                    "data_type": "string",
+                    "canonical_id": "deposits.auth_reference",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "automata_execution_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.automata_execution_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_company",
+                    "data_type": "string",
+                    "canonical_id": "deposits.billing_company",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_country_code_alpha2",
+                    "data_type": "string",
+                    "canonical_id": "deposits.billing_country_code_alpha2",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_extended_address",
+                    "data_type": "string",
+                    "canonical_id": "deposits.billing_extended_address",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_first_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.billing_first_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_last_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.billing_last_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_locality",
+                    "data_type": "string",
+                    "canonical_id": "deposits.billing_locality",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_state",
+                    "data_type": "string",
+                    "canonical_id": "deposits.billing_state",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_street_address",
+                    "data_type": "string",
+                    "canonical_id": "deposits.billing_street_address",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_zipcode",
+                    "data_type": "string",
+                    "canonical_id": "deposits.billing_zipcode",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "bin",
+                    "data_type": "string",
+                    "canonical_id": "deposits.bin",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "bonus_transaction_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.bonus_transaction_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_bin",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_bin",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_card_type",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_card_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_customer_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_customer_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_debit",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_debit",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_deposit_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.braintree_deposit_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_fanduel_user_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.braintree_fanduel_user_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_issuing_bank",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_issuing_bank",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_last_4",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_last_4",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_payment_method",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_payment_method",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_payment_method_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.braintree_payment_method_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_paypal_email",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_paypal_email",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_prepaid",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_prepaid",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_product_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_product_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "braintree_venmo_user_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.braintree_venmo_user_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "brand",
+                    "data_type": "string",
+                    "canonical_id": "deposits.brand",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "cardholder_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.cardholder_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "card_type",
+                    "data_type": "string",
+                    "canonical_id": "deposits.card_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "cd_company",
+                    "data_type": "string",
+                    "canonical_id": "deposits.cd_company",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "cd_email",
+                    "data_type": "string",
+                    "canonical_id": "deposits.cd_email",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "cd_first_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.cd_first_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "cd_last_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.cd_last_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "cd_phone",
+                    "data_type": "string",
+                    "canonical_id": "deposits.cd_phone",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "checkout_dot_com_bin",
+                    "data_type": "string",
+                    "canonical_id": "deposits.checkout_dot_com_bin",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "checkout_dot_com_card_type",
+                    "data_type": "string",
+                    "canonical_id": "deposits.checkout_dot_com_card_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "checkout_dot_com_debit",
+                    "data_type": "string",
+                    "canonical_id": "deposits.checkout_dot_com_debit",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "checkout_dot_com_issuing_bank",
+                    "data_type": "string",
+                    "canonical_id": "deposits.checkout_dot_com_issuing_bank",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "checkout_dot_com_last_4",
+                    "data_type": "string",
+                    "canonical_id": "deposits.checkout_dot_com_last_4",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "checkout_dot_com_prepaid",
+                    "data_type": "string",
+                    "canonical_id": "deposits.checkout_dot_com_prepaid",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "commercial",
+                    "data_type": "string",
+                    "canonical_id": "deposits.commercial",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "counter_location_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.counter_location_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "country_of_issuance",
+                    "data_type": "string",
+                    "canonical_id": "deposits.country_of_issuance",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "created_datetime",
+                    "data_type": "string",
+                    "canonical_id": "deposits.created_datetime",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "created_timezone",
+                    "data_type": "string",
+                    "canonical_id": "deposits.created_timezone",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "credit_card_unique_identifier",
+                    "data_type": "string",
+                    "canonical_id": "deposits.credit_card_unique_identifier",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "credit_ledger_line_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.credit_ledger_line_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "currency_iso_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.currency_iso_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "customer_location",
+                    "data_type": "string",
+                    "canonical_id": "deposits.customer_location",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "cvv_response_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.cvv_response_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "data_source_priority",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.data_source_priority",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "dd_disbursement_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.dd_disbursement_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "dd_funds_held",
+                    "data_type": "string",
+                    "canonical_id": "deposits.dd_funds_held",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "dd_settlement_amount",
+                    "data_type": "string",
+                    "canonical_id": "deposits.dd_settlement_amount",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "dd_settlement_currency_exchange_rate",
+                    "data_type": "string",
+                    "canonical_id": "deposits.dd_settlement_currency_exchange_rate",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "dd_settlement_currency_iso_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.dd_settlement_currency_iso_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "dd_success",
+                    "data_type": "string",
+                    "canonical_id": "deposits.dd_success",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "debit",
+                    "data_type": "string",
+                    "canonical_id": "deposits.debit",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "decision_status",
+                    "data_type": "string",
+                    "canonical_id": "deposits.decision_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposit_amount",
+                    "data_type": "string",
+                    "canonical_id": "deposits.deposit_amount",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposit_complete_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.deposit_complete_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposit_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.deposit_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "deposits_deposit_payment_method_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.deposits_deposit_payment_method_id",
+                    "is_primary_key": true,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposits_fanduel_user_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.deposits_fanduel_user_id",
+                    "is_primary_key": true,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposits_payment_method",
+                    "data_type": "string",
+                    "canonical_id": "deposits.deposits_payment_method",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposits_payment_method_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.deposits_payment_method_id",
+                    "is_primary_key": true,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposit_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.deposit_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "description",
+                    "data_type": "string",
+                    "canonical_id": "deposits.description",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "eligibility_uuid",
+                    "data_type": "string",
+                    "canonical_id": "deposits.eligibility_uuid",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "error_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.error_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "event_creation_time",
+                    "data_type": "string",
+                    "canonical_id": "deposits.event_creation_time",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "expiration_month",
+                    "data_type": "string",
+                    "canonical_id": "deposits.expiration_month",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "expiration_year",
+                    "data_type": "string",
+                    "canonical_id": "deposits.expiration_year",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "failed_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.failed_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "gateway_rejected_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.gateway_rejected_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "gateway_rejection_reason",
+                    "data_type": "string",
+                    "canonical_id": "deposits.gateway_rejection_reason",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "healthcare",
+                    "data_type": "string",
+                    "canonical_id": "deposits.healthcare",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "interchecks_account_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.interchecks_account_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "ip_address",
+                    "data_type": "string",
+                    "canonical_id": "deposits.ip_address",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_partial_refund",
+                    "data_type": "string",
+                    "canonical_id": "deposits.is_partial_refund",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "issuing_bank",
+                    "data_type": "string",
+                    "canonical_id": "deposits.issuing_bank",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_top_up_payment",
+                    "data_type": "string",
+                    "canonical_id": "deposits.is_top_up_payment",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "landing_inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.landing_inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "last_4",
+                    "data_type": "string",
+                    "canonical_id": "deposits.last_4",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "ledger_transfers",
+                    "data_type": "string",
+                    "canonical_id": "deposits.ledger_transfers",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "litle_transaction_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.litle_transaction_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "location_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.location_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "max_mind_geo_location",
+                    "data_type": "string",
+                    "canonical_id": "deposits.max_mind_geo_location",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "merchant_account_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.merchant_account_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "notes",
+                    "data_type": "string",
+                    "canonical_id": "deposits.notes",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.payment_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_instrument_type",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_instrument_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_method_token",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_method_token",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_method_type",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.payment_method_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_provider_instant_settle",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_provider_instant_settle",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_provider_reason_code",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.payment_provider_reason_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_provider_reason_code_message",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_provider_reason_code_message",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_provider_status",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.payment_provider_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_provider_status_message",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_provider_status_message",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_reference",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_reference",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_restriction",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_restriction",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_restrictions",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_restrictions",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_status",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_status_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payment_status_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_status_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.payment_status_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "paypal_capture_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paypal_capture_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paypal_custom_field",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paypal_custom_field",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paypal_payer_email",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paypal_payer_email",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paypal_payer_first_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paypal_payer_first_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paypal_payer_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paypal_payer_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paypal_payer_last_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paypal_payer_last_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paypal_payer_status",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paypal_payer_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paypal_payment_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paypal_payment_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paypal_refund_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paypal_refund_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payroll",
+                    "data_type": "string",
+                    "canonical_id": "deposits.payroll",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_account_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_account_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_account_number_last_four",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_account_number_last_four",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_auth_merchant_reference",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_auth_merchant_reference",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_auth_transaction_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_auth_transaction_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_bank_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_bank_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "paywithmybank_payment_provider_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.paywithmybank_payment_provider_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "performer_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.performer_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "postal_code_response_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.postal_code_response_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "prepaid",
+                    "data_type": "string",
+                    "canonical_id": "deposits.prepaid",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "processed_with_network_token",
+                    "data_type": "string",
+                    "canonical_id": "deposits.processed_with_network_token",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "processor_data",
+                    "data_type": "string",
+                    "canonical_id": "deposits.processor_data",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "processor_declined_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.processor_declined_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "processor_response_code",
+                    "data_type": "string",
+                    "canonical_id": "deposits.processor_response_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "processor_response_text",
+                    "data_type": "string",
+                    "canonical_id": "deposits.processor_response_text",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "processor_response_type",
+                    "data_type": "string",
+                    "canonical_id": "deposits.processor_response_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "processor_transaction_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.processor_transaction_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "product",
+                    "data_type": "string",
+                    "canonical_id": "deposits.product",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "product_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.product_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "product_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.product_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "refunded_amount",
+                    "data_type": "string",
+                    "canonical_id": "deposits.refunded_amount",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "refunded_transaction_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.refunded_transaction_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "refunded_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.refunded_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "refund_for_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.refund_for_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "requested_amount",
+                    "data_type": "string",
+                    "canonical_id": "deposits.requested_amount",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "retail_location",
+                    "data_type": "string",
+                    "canonical_id": "deposits.retail_location",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "risk_decision",
+                    "data_type": "string",
+                    "canonical_id": "deposits.risk_decision",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "risk_device_data_captured",
+                    "data_type": "string",
+                    "canonical_id": "deposits.risk_device_data_captured",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "session_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.session_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "settlement_confirmed_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.settlement_confirmed_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "settlement_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.settlement_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "settlement_declined_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.settlement_declined_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "settlement_pending_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.settlement_pending_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "settling_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.settling_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "sns_message_timestamp",
+                    "data_type": "string",
+                    "canonical_id": "deposits.sns_message_timestamp",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_deposit_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.source_deposit_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_payment_method",
+                    "data_type": "string",
+                    "canonical_id": "deposits.source_payment_method",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_payment_method_id",
+                    "data_type": "integer",
+                    "canonical_id": "deposits.source_payment_method_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_product_name",
+                    "data_type": "string",
+                    "canonical_id": "deposits.source_product_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_type",
+                    "data_type": "string",
+                    "canonical_id": "deposits.source_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_updated_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.source_updated_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "stg__inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.stg__inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "stg__updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.stg__updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "submitted_for_settlement_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.submitted_for_settlement_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "transaction_id",
+                    "data_type": "string",
+                    "canonical_id": "deposits.transaction_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "transaction_status",
+                    "data_type": "string",
+                    "canonical_id": "deposits.transaction_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "transaction_type",
+                    "data_type": "string",
+                    "canonical_id": "deposits.transaction_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "deposits.updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "virtual_card_last_4",
+                    "data_type": "string",
+                    "canonical_id": "deposits.virtual_card_last_4",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "virtual_card_type",
+                    "data_type": "string",
+                    "canonical_id": "deposits.virtual_card_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "voided_date",
+                    "data_type": "string",
+                    "canonical_id": "deposits.voided_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "worldpay_account_reference_number",
+                    "data_type": "string",
+                    "canonical_id": "deposits.worldpay_account_reference_number",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "worldpay_bin",
+                    "data_type": "string",
+                    "canonical_id": "deposits.worldpay_bin",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "worldpay_cnp_token",
+                    "data_type": "string",
+                    "canonical_id": "deposits.worldpay_cnp_token",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                }
+            ],
+            "canonical_id": "deposits",
+            "description": ""
+        },
+        {
+            "table_name": "ledger_account_balances",
+            "physical_name": "\"foundation.financial\".ledger_account_balances_v1",
+            "table_type": "RAW",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "balance_after_usd",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.balance_after_usd",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>Balance of Wallet Account at creation (Always set to 0.00)</p>"
+                },
+                {
+                    "name": "currency_type",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.currency_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>Type of currency of transaction or Account</p>"
+                },
+                {
+                    "name": "inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>Timestamp that indicates the time the record was inserted into the model by dbt.</p>"
+                },
+                {
+                    "name": "ledger_account_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_account_balances.ledger_account_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>Unique identifier for customers wallet account. Can be joined onto `credit_id` or `debit_id` in ledger line</p>"
+                },
+                {
+                    "name": "ledger_account_type",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.ledger_account_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>Denotes the type of ledger movement e.g was it user or system generated</p>"
+                },
+                {
+                    "name": "location_code",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.location_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>The geographical location. It can be at a regional level (for example, 'ny') or for all of FanDuel (i.e. 'all')</p>"
+                },
+                {
+                    "name": "product_name",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.product_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>The FanDuel product affiliated with the transaction. Examples include \u201cdfs\u201d, \u201csb\u201d, \u201ccasino\u201d, and \u201cracing\u201d, etc. Source platform provides a unique ID which represents the product and through a lookup to fdg_product, this field is mapped to a user-readable value that appears in the table.</p>"
+                },
+                {
+                    "name": "sequence_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_account_balances.sequence_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>The unique identifier for each record</p>"
+                },
+                {
+                    "name": "sns_message_id",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.sns_message_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": "<p>ID for the streamed sns message.</p>"
+                },
+                {
+                    "name": "sns_message_timestamp",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.sns_message_timestamp",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>Timestamp when the streamed sns message was received.</p>"
+                },
+                {
+                    "name": "stg__inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.stg__inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>Timestamp that indicates the time the record was inserted by dbt into the staging model used as a source.</p>"
+                },
+                {
+                    "name": "stg__updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.stg__updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>Timestamp that indicates the last time the records was updated by dbt in the staging model used as a source.</p>"
+                },
+                {
+                    "name": "transfer_reference_guid",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.transfer_reference_guid",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": "<p>Unique identifier for each transfer</p>"
+                },
+                {
+                    "name": "unique_key",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.unique_key",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>A composite primary key generated for the table using a combination of fields.</p>"
+                },
+                {
+                    "name": "updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>Timestamp that indicates the time the record was last updated in the model by dbt.</p>"
+                },
+                {
+                    "name": "wallet_reference",
+                    "data_type": "string",
+                    "canonical_id": "ledger_account_balances.wallet_reference",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<p>This field will contain promo code information for CPP that will be necessary to join Ledger Line data to CPP promotion data. It is equivalent to public.credit_ledger_line_refence.value in LEGACY.</p>"
+                }
+            ],
+            "canonical_id": "ledger_account_balances",
+            "description": ""
+        },
+        {
+            "table_name": "ledger_lines",
+            "physical_name": "\"foundation_views.financial\".ledger_lines_enriched",
+            "table_type": "ENRICHED",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "account_balance_before_usd",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.account_balance_before_usd",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "amount_usd",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.amount_usd",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "balance_before_usd",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.balance_before_usd",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "bet_id",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.bet_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "bet_reference",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.bet_reference",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "brand",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.brand",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "campaign_id",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.campaign_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "completed_ts",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.completed_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "contest_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.contest_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "created_by_fanduel_user_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.created_by_fanduel_user_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "credit_account_expiry_ts",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.credit_account_expiry_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "credit_account_fund_type",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.credit_account_fund_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "credit_account_max_stake",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.credit_account_max_stake",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "credit_account_name",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.credit_account_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "credit_account_token_type",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.credit_account_token_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "credit_account_type",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.credit_account_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "credit_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.credit_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "credit_ledger_line_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.credit_ledger_line_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "currency_type",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.currency_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "debit_account_expiry_ts",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.debit_account_expiry_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "debit_account_fund_type",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.debit_account_fund_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "debit_account_max_stake",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.debit_account_max_stake",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "debit_account_name",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.debit_account_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "debit_account_token_type",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.debit_account_token_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "debit_account_type",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.debit_account_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "debit_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.debit_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deposit_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.deposit_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "description_link",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.description_link",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "entry_code",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.entry_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "entry_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.entry_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "f2p_contest_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.f2p_contest_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "f2p_leaderboard_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.f2p_leaderboard_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "fanduel_user_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.fanduel_user_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "game_type_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.game_type_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_bonus_funds",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.is_bonus_funds",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_cash_funds",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.is_cash_funds",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_credit_account_missing",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.is_credit_account_missing",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_debit_account_missing",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.is_debit_account_missing",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_free_bet",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.is_free_bet",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "landing_inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.landing_inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "line_description",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.line_description",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "location_code",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.location_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "namespace",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.namespace",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "product_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.product_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "product_name",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.product_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "raised_ts",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.raised_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "rank",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.rank",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "sns_message_id",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.sns_message_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "sns_message_timestamp",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.sns_message_timestamp",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "transaction_status",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.transaction_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "transaction_type",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.transaction_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "transfer_reference_guid",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.transfer_reference_guid",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "wallet_reference",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.wallet_reference",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "wallet_reference_source",
+                    "data_type": "string",
+                    "canonical_id": "ledger_lines.wallet_reference_source",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "withdrawal_id",
+                    "data_type": "integer",
+                    "canonical_id": "ledger_lines.withdrawal_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                }
+            ],
+            "canonical_id": "ledger_lines",
+            "description": ""
+        },
+        {
+            "table_name": "account",
+            "physical_name": "\"foundation_views.account\"",
+            "table_type": "RAW",
+            "domain": "Account",
+            "columns": [],
+            "canonical_id": "account",
+            "description": NaN
+        },
+        {
+            "table_name": "verification_attempt",
+            "physical_name": "\"foundation_views.account\".verification_attempt",
+            "table_type": "RAW",
+            "domain": "Account",
+            "columns": [
+                {
+                    "name": "address_first_line",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.address_first_line",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "address_second_line",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.address_second_line",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "attempt_date",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.attempt_date",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "city",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.city",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "country",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.country",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "date_of_birth",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.date_of_birth",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deceased",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.deceased",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "device_fingerprint",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.device_fingerprint",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "event_creation_time",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.event_creation_time",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "event_id",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.event_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "fanduel_user_id",
+                    "data_type": "integer",
+                    "canonical_id": "verification_attempt.fanduel_user_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "first_name",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.first_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "id_scan_iframe_url",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.id_scan_iframe_url",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "id_scan_image_url",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.id_scan_image_url",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "ineligible_state",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.ineligible_state",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "ip_address",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.ip_address",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "landing_inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.landing_inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "last_name",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.last_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "location",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.location",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "middle_name",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.middle_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "national_id_number",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.national_id_number",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "national_id_type",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.national_id_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "national_id_verified",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.national_id_verified",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "performer_id",
+                    "data_type": "integer",
+                    "canonical_id": "verification_attempt.performer_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "phone_number",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.phone_number",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "post_code",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.post_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "product",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.product",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "response_id",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.response_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "result_codes",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.result_codes",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source",
+                    "data_type": "integer",
+                    "canonical_id": "verification_attempt.source",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "state",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.state",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "stg__inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.stg__inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "stg__updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.stg__updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "under_age",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.under_age",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "vendor",
+                    "data_type": "integer",
+                    "canonical_id": "verification_attempt.vendor",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": "<div><p>Contains the ID of the Identity Vendor used to process this Verification attempt.</p><p>0 = FanDuel</p><p>1 = Idology US</p><p>2 = Idology Canada</p><p>3 = Lexis Nexis</p><p>4 = Aristotle</p><p>5 = GAN</p><p>6 = ID Scan</p><p>7 = Aristotle Canada</p></div>"
+                },
+                {
+                    "name": "vendor_result",
+                    "data_type": "integer",
+                    "canonical_id": "verification_attempt.vendor_result",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "verification_attempt_id",
+                    "data_type": "integer",
+                    "canonical_id": "verification_attempt.verification_attempt_id",
+                    "is_primary_key": true,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "verification_reason",
+                    "data_type": "string",
+                    "canonical_id": "verification_attempt.verification_reason",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "verification_status",
+                    "data_type": "integer",
+                    "canonical_id": "verification_attempt.verification_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "verification_type",
+                    "data_type": "integer",
+                    "canonical_id": "verification_attempt.verification_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                }
+            ],
+            "canonical_id": "verification_attempt",
+            "description": ""
+        },
+        {
+            "table_name": "verified_user_details",
+            "physical_name": "\"foundation_views.account\".verified_user_details",
+            "table_type": "RAW",
+            "domain": "Account",
+            "columns": [
+                {
+                    "name": "address_first_line",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.address_first_line",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "address_second_line",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.address_second_line",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "city",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.city",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "country",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.country",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "data_source_priority",
+                    "data_type": "integer",
+                    "canonical_id": "verified_user_details.data_source_priority",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "date_of_birth",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.date_of_birth",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "dupi_hash",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.dupi_hash",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "event_creation_time",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.event_creation_time",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "event_order",
+                    "data_type": "integer",
+                    "canonical_id": "verified_user_details.event_order",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "event_type",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.event_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "fanduel_user_id",
+                    "data_type": "integer",
+                    "canonical_id": "verified_user_details.fanduel_user_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "first_name",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.first_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "last_name",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.last_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "middle_name",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.middle_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "national_id_hash",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.national_id_hash",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "national_id_number",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.national_id_number",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "national_id_type",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.national_id_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "national_id_type_code",
+                    "data_type": "integer",
+                    "canonical_id": "verified_user_details.national_id_type_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "post_code",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.post_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "source_type",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.source_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "state",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.state",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "stg__inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.stg__inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "stg__updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.stg__updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "verified_user_details.updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                }
+            ],
+            "canonical_id": "verified_user_details",
+            "description": ""
+        },
+        {
+            "table_name": "withdrawals",
+            "physical_name": "\"foundation_views.financial\".withdrawals",
+            "table_type": "RAW",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "amount_usd",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.amount_usd",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "brand_name",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.brand_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "completion_transfer_id",
+                    "data_type": "integer",
+                    "canonical_id": "withdrawals.completion_transfer_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deduction_reference",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.deduction_reference",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "deduction_transfer_id",
+                    "data_type": "integer",
+                    "canonical_id": "withdrawals.deduction_transfer_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "event_creation_ts",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.event_creation_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "failure_code",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.failure_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "fanduel_user_id",
+                    "data_type": "integer",
+                    "canonical_id": "withdrawals.fanduel_user_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_authorized_transition",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.is_authorized_transition",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_first_time_withdrawal",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.is_first_time_withdrawal",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "is_manually_created",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.is_manually_created",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "landing_inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.landing_inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "method",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.method",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_method",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.payment_method",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_method_id",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.payment_method_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "payment_status",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.payment_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_status_code",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.payment_status_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_status_id",
+                    "data_type": "integer",
+                    "canonical_id": "withdrawals.payment_status_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "product_id",
+                    "data_type": "integer",
+                    "canonical_id": "withdrawals.product_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "product_name",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.product_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "product_name_id_enrichment",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.product_name_id_enrichment",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "refund_transfer_id",
+                    "data_type": "integer",
+                    "canonical_id": "withdrawals.refund_transfer_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "request_ip",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.request_ip",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "rtp_status",
+                    "data_type": "integer",
+                    "canonical_id": "withdrawals.rtp_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "sns_message_timestamp",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.sns_message_timestamp",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "stg__inserted_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.stg__inserted_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "stg__updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.stg__updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "updated_at_ts",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.updated_at_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "velocity",
+                    "data_type": "integer",
+                    "canonical_id": "withdrawals.velocity",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "withdrawal_id",
+                    "data_type": "integer",
+                    "canonical_id": "withdrawals.withdrawal_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "withdrawal_request_ts",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.withdrawal_request_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "withdrawal_status",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.withdrawal_status",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "withdrawal_type",
+                    "data_type": "string",
+                    "canonical_id": "withdrawals.withdrawal_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                }
+            ],
+            "canonical_id": "withdrawals",
+            "description": ""
+        },
+        {
+            "table_name": "worldpay_transactions",
+            "physical_name": "\"foundation_views.financial\".worldpay_transactions",
+            "table_type": "RAW",
+            "domain": "Finance",
+            "columns": [
+                {
+                    "name": "acquirer_reference_number",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.acquirer_reference_number",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "activity_ts",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.activity_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "affiliate",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.affiliate",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "approximate_interchange_fee_amount",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.approximate_interchange_fee_amount",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "bank_identification_number",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.bank_identification_number",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "batch_id",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.batch_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_account_suffix",
+                    "data_type": "integer",
+                    "canonical_id": "worldpay_transactions.billing_account_suffix",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_avs_response_code",
+                    "data_type": "integer",
+                    "canonical_id": "worldpay_transactions.billing_avs_response_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_avs_response_message",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.billing_avs_response_message",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_city",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.billing_city",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_customer_name",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.billing_customer_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_descriptor",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.billing_descriptor",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_postal_code",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.billing_postal_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_profile_id",
+                    "data_type": "integer",
+                    "canonical_id": "worldpay_transactions.billing_profile_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_state",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.billing_state",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_street_address_line_1",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.billing_street_address_line_1",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "billing_street_address_line_2",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.billing_street_address_line_2",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "campaign",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.campaign",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "customer_id",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.customer_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "customer_reference",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.customer_reference",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "fraud_checksum_response_code",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.fraud_checksum_response_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "fraud_checksum_response_message",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.fraud_checksum_response_message",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "funding_method",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.funding_method",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "inserted_ts",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.inserted_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "interchange_flat_rate",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.interchange_flat_rate",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "interchange_percent_rate",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.interchange_percent_rate",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "interchange_rate",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.interchange_rate",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "issuing_bank",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.issuing_bank",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "merchant_category_code",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.merchant_category_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "merchant_grouping_id",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.merchant_grouping_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "merchant_id",
+                    "data_type": "integer",
+                    "canonical_id": "worldpay_transactions.merchant_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "merchant_name",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.merchant_name",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "merchant_order_number",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.merchant_order_number",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "merchant_transaction_id",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.merchant_transaction_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "original_auth_code",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.original_auth_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "parent_vantiv_payment_id",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.parent_vantiv_payment_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "payment_type",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.payment_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "pinless_debit_network",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.pinless_debit_network",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "presenter",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.presenter",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "purchase_amt",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.purchase_amt",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "purchase_currency",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.purchase_currency",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "reporting_group",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.reporting_group",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "requested_auth_amount",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.requested_auth_amount",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "response_reason_message",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.response_reason_message",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "secondary_amt",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.secondary_amt",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "secondary_settlement_amt",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.secondary_settlement_amt",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "session_id",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.session_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": true,
+                    "description": ""
+                },
+                {
+                    "name": "settlement_amt",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.settlement_amt",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "settlement_currency",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.settlement_currency",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "settlement_ts",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.settlement_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "token_number",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.token_number",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "token_response_code",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.token_response_code",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "token_response_message",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.token_response_message",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "transaction_processing_gmt_ts",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.transaction_processing_gmt_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "transaction_type",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.transaction_type",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "updated_ts",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.updated_ts",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "vantiv_cnp_api_reporting_group",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.vantiv_cnp_api_reporting_group",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                },
+                {
+                    "name": "vantiv_payment_id",
+                    "data_type": "string",
+                    "canonical_id": "worldpay_transactions.vantiv_payment_id",
+                    "is_primary_key": false,
+                    "is_foreign_key": false,
+                    "description": ""
+                }
+            ],
+            "canonical_id": "worldpay_transactions",
+            "description": ""
+        }
+    ],
+    "relationships": [
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.credit_ledger_line_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.credit_ledger_line_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via credit_ledger_line_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.deposit_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.deposit_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via deposit_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.event_id",
+            "target_table": "verification_attempt",
+            "target_column": "verification_attempt.event_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via event_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.fanduel_user_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.fanduel_user_id",
+            "target_table": "verification_attempt",
+            "target_column": "verification_attempt.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.fanduel_user_id",
+            "target_table": "verified_user_details",
+            "target_column": "verified_user_details.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.fanduel_user_id",
+            "target_table": "withdrawals",
+            "target_column": "withdrawals.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.payment_method_id",
+            "target_table": "withdrawals",
+            "target_column": "withdrawals.payment_method_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via payment_method_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.payment_status_id",
+            "target_table": "withdrawals",
+            "target_column": "withdrawals.payment_status_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via payment_status_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.performer_id",
+            "target_table": "verification_attempt",
+            "target_column": "verification_attempt.performer_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via performer_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.product_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.product_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via product_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.product_id",
+            "target_table": "withdrawals",
+            "target_column": "withdrawals.product_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via product_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.credit_ledger_line_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.credit_ledger_line_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via credit_ledger_line_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.deposit_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.deposit_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via deposit_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.payment_status_id",
+            "target_table": "withdrawals",
+            "target_column": "withdrawals.payment_status_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via payment_status_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.performer_id",
+            "target_table": "verification_attempt",
+            "target_column": "verification_attempt.performer_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via performer_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.product_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.product_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via product_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.product_id",
+            "target_table": "withdrawals",
+            "target_column": "withdrawals.product_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via product_id"
+        },
+        {
+            "source_table": "deposits",
+            "source_column": "deposits.session_id",
+            "target_table": "worldpay_transactions",
+            "target_column": "worldpay_transactions.session_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via session_id"
+        },
+        {
+            "source_table": "ledger_account_balances",
+            "source_column": "ledger_account_balances.sns_message_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.sns_message_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via sns_message_id"
+        },
+        {
+            "source_table": "ledger_account_balances",
+            "source_column": "ledger_account_balances.transfer_reference_guid",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.transfer_reference_guid",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via transfer_reference_guid"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.credit_ledger_line_id",
+            "target_table": "deposits",
+            "target_column": "deposits.credit_ledger_line_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via credit_ledger_line_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.credit_ledger_line_id",
+            "target_table": "deposits",
+            "target_column": "deposits.credit_ledger_line_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via credit_ledger_line_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.deposit_id",
+            "target_table": "deposits",
+            "target_column": "deposits.deposit_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via deposit_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.deposit_id",
+            "target_table": "deposits",
+            "target_column": "deposits.deposit_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via deposit_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.fanduel_user_id",
+            "target_table": "deposits",
+            "target_column": "deposits.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.fanduel_user_id",
+            "target_table": "verification_attempt",
+            "target_column": "verification_attempt.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.fanduel_user_id",
+            "target_table": "verified_user_details",
+            "target_column": "verified_user_details.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.fanduel_user_id",
+            "target_table": "withdrawals",
+            "target_column": "withdrawals.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.product_id",
+            "target_table": "deposits",
+            "target_column": "deposits.product_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via product_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.product_id",
+            "target_table": "deposits",
+            "target_column": "deposits.product_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via product_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.product_id",
+            "target_table": "withdrawals",
+            "target_column": "withdrawals.product_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via product_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.sns_message_id",
+            "target_table": "ledger_account_balances",
+            "target_column": "ledger_account_balances.sns_message_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via sns_message_id"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.transfer_reference_guid",
+            "target_table": "ledger_account_balances",
+            "target_column": "ledger_account_balances.transfer_reference_guid",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via transfer_reference_guid"
+        },
+        {
+            "source_table": "ledger_lines",
+            "source_column": "ledger_lines.withdrawal_id",
+            "target_table": "withdrawals",
+            "target_column": "withdrawals.withdrawal_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via withdrawal_id"
+        },
+        {
+            "source_table": "verification_attempt",
+            "source_column": "verification_attempt.event_id",
+            "target_table": "deposits",
+            "target_column": "deposits.event_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via event_id"
+        },
+        {
+            "source_table": "verification_attempt",
+            "source_column": "verification_attempt.fanduel_user_id",
+            "target_table": "deposits",
+            "target_column": "deposits.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "verification_attempt",
+            "source_column": "verification_attempt.fanduel_user_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "verification_attempt",
+            "source_column": "verification_attempt.fanduel_user_id",
+            "target_table": "verified_user_details",
+            "target_column": "verified_user_details.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "verification_attempt",
+            "source_column": "verification_attempt.fanduel_user_id",
+            "target_table": "withdrawals",
+            "target_column": "withdrawals.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "verification_attempt",
+            "source_column": "verification_attempt.middle_name",
+            "target_table": "verified_user_details",
+            "target_column": "verified_user_details.middle_name",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via middle_name"
+        },
+        {
+            "source_table": "verification_attempt",
+            "source_column": "verification_attempt.national_id_number",
+            "target_table": "verified_user_details",
+            "target_column": "verified_user_details.national_id_number",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via national_id_number"
+        },
+        {
+            "source_table": "verification_attempt",
+            "source_column": "verification_attempt.national_id_type",
+            "target_table": "verified_user_details",
+            "target_column": "verified_user_details.national_id_type",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via national_id_type"
+        },
+        {
+            "source_table": "verification_attempt",
+            "source_column": "verification_attempt.performer_id",
+            "target_table": "deposits",
+            "target_column": "deposits.performer_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via performer_id"
+        },
+        {
+            "source_table": "verification_attempt",
+            "source_column": "verification_attempt.performer_id",
+            "target_table": "deposits",
+            "target_column": "deposits.performer_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via performer_id"
+        },
+        {
+            "source_table": "verified_user_details",
+            "source_column": "verified_user_details.fanduel_user_id",
+            "target_table": "deposits",
+            "target_column": "deposits.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "verified_user_details",
+            "source_column": "verified_user_details.fanduel_user_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "verified_user_details",
+            "source_column": "verified_user_details.fanduel_user_id",
+            "target_table": "verification_attempt",
+            "target_column": "verification_attempt.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "verified_user_details",
+            "source_column": "verified_user_details.fanduel_user_id",
+            "target_table": "withdrawals",
+            "target_column": "withdrawals.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "verified_user_details",
+            "source_column": "verified_user_details.middle_name",
+            "target_table": "verification_attempt",
+            "target_column": "verification_attempt.middle_name",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via middle_name"
+        },
+        {
+            "source_table": "verified_user_details",
+            "source_column": "verified_user_details.national_id_number",
+            "target_table": "verification_attempt",
+            "target_column": "verification_attempt.national_id_number",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via national_id_number"
+        },
+        {
+            "source_table": "verified_user_details",
+            "source_column": "verified_user_details.national_id_type",
+            "target_table": "verification_attempt",
+            "target_column": "verification_attempt.national_id_type",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via national_id_type"
+        },
+        {
+            "source_table": "withdrawals",
+            "source_column": "withdrawals.fanduel_user_id",
+            "target_table": "deposits",
+            "target_column": "deposits.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "withdrawals",
+            "source_column": "withdrawals.fanduel_user_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "withdrawals",
+            "source_column": "withdrawals.fanduel_user_id",
+            "target_table": "verification_attempt",
+            "target_column": "verification_attempt.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "withdrawals",
+            "source_column": "withdrawals.fanduel_user_id",
+            "target_table": "verified_user_details",
+            "target_column": "verified_user_details.fanduel_user_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via fanduel_user_id"
+        },
+        {
+            "source_table": "withdrawals",
+            "source_column": "withdrawals.payment_method_id",
+            "target_table": "deposits",
+            "target_column": "deposits.payment_method_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via payment_method_id"
+        },
+        {
+            "source_table": "withdrawals",
+            "source_column": "withdrawals.payment_status_id",
+            "target_table": "deposits",
+            "target_column": "deposits.payment_status_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via payment_status_id"
+        },
+        {
+            "source_table": "withdrawals",
+            "source_column": "withdrawals.payment_status_id",
+            "target_table": "deposits",
+            "target_column": "deposits.payment_status_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via payment_status_id"
+        },
+        {
+            "source_table": "withdrawals",
+            "source_column": "withdrawals.product_id",
+            "target_table": "deposits",
+            "target_column": "deposits.product_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via product_id"
+        },
+        {
+            "source_table": "withdrawals",
+            "source_column": "withdrawals.product_id",
+            "target_table": "deposits",
+            "target_column": "deposits.product_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via product_id"
+        },
+        {
+            "source_table": "withdrawals",
+            "source_column": "withdrawals.product_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.product_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via product_id"
+        },
+        {
+            "source_table": "withdrawals",
+            "source_column": "withdrawals.withdrawal_id",
+            "target_table": "ledger_lines",
+            "target_column": "ledger_lines.withdrawal_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via withdrawal_id"
+        },
+        {
+            "source_table": "worldpay_transactions",
+            "source_column": "worldpay_transactions.session_id",
+            "target_table": "deposits",
+            "target_column": "deposits.session_id",
+            "relationship_type": "linked_by_id",
+            "description": "Auto-detected link via session_id"
+        }
+    ]
+}
